@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "1.0.0-rc2",
+  "patch_version": "1.0.0-rc3",
   "source_revision": "csv-7a17db7f55e3408c",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "4e01f9ea786d421fdc2bda40f90363d035005e20d2e5565d0860986ff24b6d0c",
+  "translation_snapshot_sha256": "b3cfbc199b67381af0ef0e557752a1dcc6c607fd52c3e76023e5b92f9651e432",
   "source_game_messages_sha256": "7a17db7f55e3408c7de6cfe8322a07c57e71cf7ace9f03344f9cfa872b4b9cc5",
   "translated_rows": 15419,
   "unique_translations": 15253,
@@ -11,8 +11,8 @@
   "files": [
     {
       "path": "game_messages.csv",
-      "size": 7402105,
-      "sha256": "ad6b6089c1df43d92ec1d45777ed346b7b76745fa5027b545ac95c9d7e12a2f4"
+      "size": 7403204,
+      "sha256": "adb16beefd993a8bfb71f4871b9940dc450322e5e023a93748c365af8995a5b7"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",
