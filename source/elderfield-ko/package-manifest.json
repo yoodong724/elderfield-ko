@@ -1,0 +1,381 @@
+{
+  "schema_version": "1.0.0",
+  "archive_root": "elderfield-ko",
+  "install_targets": [
+    "game_messages.csv",
+    "fonts/NotoSansCJKkr-Regular.otf",
+    "js/plugins.js",
+    "img/titles2/Command_0_ch.png_",
+    "img/titles2/Command_1_ch.png_",
+    "img/titles2/Command_2_ch.png_",
+    "img/titles2/Command_3_ch.png_",
+    "img/pictures/CustScene/who_ch.png_",
+    "img/pictures/CustScene/are_ch.png_",
+    "img/pictures/CustScene/you_ch.png_",
+    "img/pictures/Calendar/SeasonofDeath_ch.png_",
+    "img/pictures/Calendar/SeasonofRebirth_ch.png_",
+    "img/pictures/Calendar/SeasonoftheHarvest_ch.png_",
+    "img/pictures/Calendar/SeasonoftheWitch_ch.png_",
+    "img/pictures/ControlPrompts/ALLPAD/ExtraControls_ALLPAD_ch.png_",
+    "img/pictures/ControlPrompts/ALLPAD/Move_ALLPAD_ch.png_",
+    "img/pictures/ControlPrompts/ALLPAD/Turn in Place_ALLPAD_ch.png_",
+    "img/pictures/ControlPrompts/PC/ExtraControls_PC_ch.png_",
+    "img/pictures/ControlPrompts/PC/Interact_PC_ch.png_",
+    "img/pictures/ControlPrompts/PC/Menu_PC_ch.png_",
+    "img/pictures/ControlPrompts/PC/Move_PC_ch.png_",
+    "img/pictures/ControlPrompts/PC/Sprint_PC_ch.png_",
+    "img/pictures/ControlPrompts/PC/Turn in Place_PC_ch.png_",
+    "img/pictures/ControlPrompts/PS/Interact_PS_ch.png_",
+    "img/pictures/ControlPrompts/PS/Menu_PS_ch.png_",
+    "img/pictures/ControlPrompts/PS/Sprint_PS_ch.png_",
+    "img/pictures/ControlPrompts/SW/Interact_SW_ch.png_",
+    "img/pictures/ControlPrompts/SW/Menu_SW_ch.png_",
+    "img/pictures/ControlPrompts/SW/Sprint_SW_ch.png_",
+    "img/pictures/ControlPrompts/XBOX/Interact_XBOX_ch.png_",
+    "img/pictures/ControlPrompts/XBOX/Menu_XBOX_ch.png_",
+    "img/pictures/ControlPrompts/XBOX/Sprint_XBOX_ch.png_",
+    "img/pictures/LoadingFarm_ch.png_",
+    "img/pictures/LoadingLarge_ch.png_",
+    "img/pictures/Luck_Lucky_ch.png_",
+    "img/pictures/Luck_Neutral_ch.png_",
+    "img/pictures/Luck_Unlucky_ch.png_",
+    "img/pictures/Radio/3_ch.png_",
+    "img/pictures/Seasons/Banner0_ch.png_",
+    "img/pictures/Seasons/Banner1_ch.png_",
+    "img/pictures/Seasons/Banner2_ch.png_",
+    "img/pictures/Seasons/Banner3_ch.png_",
+    "img/pictures/Signs/watch1_ch.png_",
+    "img/pictures/Signs/watch2_ch.png_",
+    "img/pictures/Signs/watch3_ch.png_",
+    "img/pictures/Signs/watch4_ch.png_",
+    "img/pictures/Tutorial/combat1_ch.png_",
+    "img/pictures/Tutorial/combat7_ch.png_",
+    "img/pictures/Tutorial/combat8_ch.png_",
+    "img/pictures/Tutorial Images/combat8_ch.png_",
+    "img/pictures/UpdatingCrops_ch.png_",
+    "img/pictures/hweenDice/TREAT_ch.png_",
+    "img/pictures/hweenDice/TRICK_ch.png_",
+    "img/pictures/map_ch.png_",
+    "img/pictures/relationship bar/decrease_ch.png_",
+    "img/pictures/relationship bar/increased_ch.png_",
+    "img/system/GameOver_ch.png_",
+    "img/titles2/Command_6_ch.png_"
+  ],
+  "files": [
+    {
+      "path": "README.txt",
+      "size": 318,
+      "sha256": "9b51ee5217ee704f5238bd666afd1652752413a0e6c66c501480ac536b2de5d8"
+    },
+    {
+      "path": "install.cmd",
+      "size": 12673,
+      "sha256": "fff37a8d7698d2604014fe3d32e06b8f1281f51d5cf51db0f9b8fa102627497b"
+    },
+    {
+      "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
+      "size": 16433112,
+      "sha256": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a"
+    },
+    {
+      "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf.LICENSE.txt",
+      "size": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "patch_files/game_messages.csv",
+      "size": 7402105,
+      "sha256": "ad6b6089c1df43d92ec1d45777ed346b7b76745fa5027b545ac95c9d7e12a2f4"
+    },
+    {
+      "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
+      "size": 40504,
+      "sha256": "a6ab1ece56594bbc6c8c46f26f51683a155a9f9d81523aadea75f32b401a208d"
+    },
+    {
+      "path": "patch_files/img/pictures/Calendar/SeasonofRebirth_ch.png_",
+      "size": 38647,
+      "sha256": "73edcc0ef8012016277f99dbe88dbda8aa2895da65f01a6a85c4390212f51f3f"
+    },
+    {
+      "path": "patch_files/img/pictures/Calendar/SeasonoftheHarvest_ch.png_",
+      "size": 39244,
+      "sha256": "876950c07ec7e1807e332dc2915b91116c31106e90cd4a38df02c841130f3ca7"
+    },
+    {
+      "path": "patch_files/img/pictures/Calendar/SeasonoftheWitch_ch.png_",
+      "size": 37817,
+      "sha256": "e2c9d2b696ed03130a8e1810cbc67f8db45fcbfe1547779bdc4f23d131f4be12"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/ExtraControls_ALLPAD_ch.png_",
+      "size": 20141,
+      "sha256": "82080198fb2217ce1e9440f363eb17d0f56e57edf367238a3ba4c41e323d5728"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/Move_ALLPAD_ch.png_",
+      "size": 5174,
+      "sha256": "964f34b65904ad83309d97122d8131aa77625f2f5597b5548595839903b88b5e"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/Turn in Place_ALLPAD_ch.png_",
+      "size": 4909,
+      "sha256": "1352a5238b463dcbe19aa288655f13a9598b35ffdb526607e49961bd78810b0a"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/ExtraControls_PC_ch.png_",
+      "size": 20521,
+      "sha256": "165e91a6d2a96b3fc21aa2d480b67640f628100223903f8a361894d610887e96"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/Interact_PC_ch.png_",
+      "size": 6495,
+      "sha256": "6f5b1a79c2f7911f40704ebefdfcc8fc9a6bdfb750927b798df5f74699b5c707"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/Menu_PC_ch.png_",
+      "size": 6268,
+      "sha256": "e3f6902365406dd2014b9fc17f91b7bfc82486f2b0e0cbb77838148520d41667"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/Move_PC_ch.png_",
+      "size": 5127,
+      "sha256": "8a278d2919d0ec1e3ff93dac705bb2ffc7672f6a1a2aeded28ab392279c6c66f"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/Sprint_PC_ch.png_",
+      "size": 5292,
+      "sha256": "131d425f9c6c24832c438af16e1b0b693c9e17c2e767a16518c89e70e1f5534f"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PC/Turn in Place_PC_ch.png_",
+      "size": 5227,
+      "sha256": "10c50dd4b02874d71d77fdd43b4a39181f205f4cd5e6fba46ac57f0be8649412"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PS/Interact_PS_ch.png_",
+      "size": 5973,
+      "sha256": "ebe3b59f0fcf5dad542f88972293b7d284d36955d16ddd504e8a75f7ad213c80"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PS/Menu_PS_ch.png_",
+      "size": 6595,
+      "sha256": "0bbc12e458fc8c4e28514465c911ab3d90daece9f2159f00b7ebe9486ab7778c"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/PS/Sprint_PS_ch.png_",
+      "size": 5417,
+      "sha256": "fbcc4e7e9594fa282f6b734987bfa3491915f119b74a935c960c038413381ebd"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/SW/Interact_SW_ch.png_",
+      "size": 5930,
+      "sha256": "00ee6acb6a6d99d4b76383ef6078e467dc82dac28629155d9a5bf95285a341ec"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/SW/Menu_SW_ch.png_",
+      "size": 5520,
+      "sha256": "85bffdcdc97b0a6bb765343b678555643d15cd3469ac221d9637355259fef409"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/SW/Sprint_SW_ch.png_",
+      "size": 5278,
+      "sha256": "90fda9c72edc1b26b9079f0cf54d3276995b498fd41c74a6633fce943b5d3144"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/XBOX/Interact_XBOX_ch.png_",
+      "size": 5901,
+      "sha256": "4ff787b1bd73a80329b7b8a3a2513d8b9a16b9068179b763e25d2690ba74ba23"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/XBOX/Menu_XBOX_ch.png_",
+      "size": 5521,
+      "sha256": "9398a5e1dfab6ae430ac9cb0e5e392a86ac53a515af5b4e4905d4aecb3feb718"
+    },
+    {
+      "path": "patch_files/img/pictures/ControlPrompts/XBOX/Sprint_XBOX_ch.png_",
+      "size": 5239,
+      "sha256": "a1ea6a4de242deea21a45d5a7d807e53c0a58d70da7ed821aabba90626d9fe5c"
+    },
+    {
+      "path": "patch_files/img/pictures/CustScene/are_ch.png_",
+      "size": 3768,
+      "sha256": "667c3f95d5d74bd167a70742fa2a6bcc25b720b1b456aae96a8ea94b0a13ec05"
+    },
+    {
+      "path": "patch_files/img/pictures/CustScene/who_ch.png_",
+      "size": 3988,
+      "sha256": "1531126d49a33fbfcfbaa7cf7c32575c8967b5284c29e26cb88ec8c5ce6bc44a"
+    },
+    {
+      "path": "patch_files/img/pictures/CustScene/you_ch.png_",
+      "size": 3932,
+      "sha256": "01e0ecdb2ed64dca87ea6187b005eaea6593d1f12ace9665cc91dfc4622ebe75"
+    },
+    {
+      "path": "patch_files/img/pictures/LoadingFarm_ch.png_",
+      "size": 4021,
+      "sha256": "47c166f7a41515f1cb5e978811feef7292c8f5701a83ba13825d6ecf28f447ca"
+    },
+    {
+      "path": "patch_files/img/pictures/LoadingLarge_ch.png_",
+      "size": 4687,
+      "sha256": "b2a22719b73774d2a7bdaee0f3362a0e90cb844d72a419bcb7d8073723b1cd0f"
+    },
+    {
+      "path": "patch_files/img/pictures/Luck_Lucky_ch.png_",
+      "size": 739,
+      "sha256": "eba21b08e419ae5cc6228c76209afb7f5c3c499222d2efef999c362ade595610"
+    },
+    {
+      "path": "patch_files/img/pictures/Luck_Neutral_ch.png_",
+      "size": 486,
+      "sha256": "44ce6ac8e157176ed82232e2733ad71c90e6ef4193c9f1907b1331d14becbdf5"
+    },
+    {
+      "path": "patch_files/img/pictures/Luck_Unlucky_ch.png_",
+      "size": 564,
+      "sha256": "b7b8b96db4af08d2845a126cd76ac47b3469cef77858771ac7104474b464a66c"
+    },
+    {
+      "path": "patch_files/img/pictures/Radio/3_ch.png_",
+      "size": 229164,
+      "sha256": "4077500eeda3aff281fd3d8dada585d6cf0d5464768f248bc2141c0ceb873b9d"
+    },
+    {
+      "path": "patch_files/img/pictures/Seasons/Banner0_ch.png_",
+      "size": 70043,
+      "sha256": "d944298c9b33723b326af5ea8ea0be6a64be773072d1cb300b3ebc1c7ef96de6"
+    },
+    {
+      "path": "patch_files/img/pictures/Seasons/Banner1_ch.png_",
+      "size": 67806,
+      "sha256": "b5f07deda68b0fb5133e976456590d51b2182227093cd78ba7bc28ebe8a5878f"
+    },
+    {
+      "path": "patch_files/img/pictures/Seasons/Banner2_ch.png_",
+      "size": 64617,
+      "sha256": "ba633397739c700478d2893e68d9e53067b19d31ced4881024adc8408b70cf3f"
+    },
+    {
+      "path": "patch_files/img/pictures/Seasons/Banner3_ch.png_",
+      "size": 70584,
+      "sha256": "d3e4658639e3ae976669776ff98fcd0f3ebe21c3aba826d8efa3d0020e34a4d4"
+    },
+    {
+      "path": "patch_files/img/pictures/Signs/watch1_ch.png_",
+      "size": 6007,
+      "sha256": "759cee82e5affca1d7c0aa070252372c56bba630adcf4250182e2925b9691313"
+    },
+    {
+      "path": "patch_files/img/pictures/Signs/watch2_ch.png_",
+      "size": 14328,
+      "sha256": "d1902cfa84efdaf6fa6ac6ab30fb8721a2de617b5385ef79f3d13ed52d08f707"
+    },
+    {
+      "path": "patch_files/img/pictures/Signs/watch3_ch.png_",
+      "size": 15630,
+      "sha256": "2e601029e8e0a581142c2cfb16365ab4a710e4769dade950918137e7e122ad13"
+    },
+    {
+      "path": "patch_files/img/pictures/Signs/watch4_ch.png_",
+      "size": 4634,
+      "sha256": "b63756ef0b3aae3756f1bf8d204030d980b791136dbf0641ebac900bb9e31b3a"
+    },
+    {
+      "path": "patch_files/img/pictures/Tutorial/combat1_ch.png_",
+      "size": 203650,
+      "sha256": "a262a93c6b7862fd08373fea2c6c550784447dabaf6315bc9abc1a3ea92654c0"
+    },
+    {
+      "path": "patch_files/img/pictures/Tutorial/combat7_ch.png_",
+      "size": 161089,
+      "sha256": "6e0569435966c661452148aca1a7b03e7547d68adee93cbba6c576069f0ece02"
+    },
+    {
+      "path": "patch_files/img/pictures/Tutorial/combat8_ch.png_",
+      "size": 203930,
+      "sha256": "0e7c108425eb5da71e81d21addaf1a1a901efbd9978785fd170ac6783a0f2271"
+    },
+    {
+      "path": "patch_files/img/pictures/Tutorial Images/combat8_ch.png_",
+      "size": 203930,
+      "sha256": "0e7c108425eb5da71e81d21addaf1a1a901efbd9978785fd170ac6783a0f2271"
+    },
+    {
+      "path": "patch_files/img/pictures/UpdatingCrops_ch.png_",
+      "size": 7235,
+      "sha256": "e8935bfb08dff211b7a9b3fc0e9faf342b34a331b501b334481792d5dc9fe144"
+    },
+    {
+      "path": "patch_files/img/pictures/hweenDice/TREAT_ch.png_",
+      "size": 709,
+      "sha256": "0765c48ec0946202020e4d539c89768636e4b87ced737d5c7e3f806f9b90ce1d"
+    },
+    {
+      "path": "patch_files/img/pictures/hweenDice/TRICK_ch.png_",
+      "size": 728,
+      "sha256": "da6bd80168e0e9703bb76047cf94c24936acd4055013cb254ffd54ffe08bc585"
+    },
+    {
+      "path": "patch_files/img/pictures/map_ch.png_",
+      "size": 934462,
+      "sha256": "65e263b35a434cb0ef84861672a535d1940663275871a8d27fdb8f7e89060622"
+    },
+    {
+      "path": "patch_files/img/pictures/relationship bar/decrease_ch.png_",
+      "size": 1279,
+      "sha256": "f7aeb8c8aadd8ece8207ef64ace37c652642b8ad6e8b2e2b5b99fe4942041117"
+    },
+    {
+      "path": "patch_files/img/pictures/relationship bar/increased_ch.png_",
+      "size": 1273,
+      "sha256": "8feebed7ca0f49e83ac654f4f8e9bca6ea80b943e21e34d909cc065a7d0b66da"
+    },
+    {
+      "path": "patch_files/img/system/GameOver_ch.png_",
+      "size": 454886,
+      "sha256": "66d7254322372e119c508625f9126488c4ebca892a6fd17d443e83053da4d1b1"
+    },
+    {
+      "path": "patch_files/img/titles2/Command_0_ch.png_",
+      "size": 1715,
+      "sha256": "ca5239076374a76b7852703d18bf958ed0d693b572222b5b3c919d9c538d1b2f"
+    },
+    {
+      "path": "patch_files/img/titles2/Command_1_ch.png_",
+      "size": 1676,
+      "sha256": "1539dfe73dd4732c288720c78f966a9d8445bda03f030b3aa8a6129eea753db9"
+    },
+    {
+      "path": "patch_files/img/titles2/Command_2_ch.png_",
+      "size": 1422,
+      "sha256": "ac31d040fd2c9c6f2c604e97dc327f61300d3f1a2cc30e1d5d7535b279cc6238"
+    },
+    {
+      "path": "patch_files/img/titles2/Command_3_ch.png_",
+      "size": 1702,
+      "sha256": "b29e11ebc63b1ce1529e8b04655946361cadd1761713d9e8763fef3396663818"
+    },
+    {
+      "path": "patch_files/img/titles2/Command_6_ch.png_",
+      "size": 2309,
+      "sha256": "482c2f197e67ef0f3d4866774b80a37996aaf97c10763a2619d47bffbf8c2540"
+    },
+    {
+      "path": "patch_files/js/plugins.js",
+      "size": 5985344,
+      "sha256": "8dafea71db94d2d961c832202e589243fae81fc3f89b8140c2bb8dc32547670e"
+    },
+    {
+      "path": "patch_files/manifest.json",
+      "size": 10762,
+      "sha256": "638f932f8a0ac1c2ddefb3fabcec9a4d437b931b53c1a0294d6bba7499b83251"
+    },
+    {
+      "path": "restore.cmd",
+      "size": 3968,
+      "sha256": "246ef854e9e9bdcce409fa6d2dcf592bbc3a552f7361b03c2d9f4bddc603b101"
+    }
+  ]
+}
