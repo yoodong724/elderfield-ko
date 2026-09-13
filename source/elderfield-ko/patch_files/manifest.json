@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "1.0.0-rc3",
+  "patch_version": "1.0.0-rc5",
   "source_revision": "csv-7a17db7f55e3408c",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "b3cfbc199b67381af0ef0e557752a1dcc6c607fd52c3e76023e5b92f9651e432",
-  "source_game_messages_sha256": "7a17db7f55e3408c7de6cfe8322a07c57e71cf7ace9f03344f9cfa872b4b9cc5",
+  "translation_snapshot_sha256": "fc10f84b392462dcf78547c3836bcffe617d13099744510f24bbea07b3ee815d",
+  "source_game_messages_sha256": "adb16beefd993a8bfb71f4871b9940dc450322e5e023a93748c365af8995a5b7",
   "translated_rows": 15419,
   "unique_translations": 15253,
   "reviewed_image_assets": 48,
   "files": [
     {
       "path": "game_messages.csv",
-      "size": 7403204,
-      "sha256": "adb16beefd993a8bfb71f4871b9940dc450322e5e023a93748c365af8995a5b7"
+      "size": 7403253,
+      "sha256": "12289ac7d345a815b00ea605b357184f2b3218734774ee69b57bca3f36839ce7"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",
