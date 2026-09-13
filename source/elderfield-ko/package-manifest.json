@@ -65,7 +65,7 @@
     {
       "path": "README.txt",
       "size": 318,
-      "sha256": "ff6066ebf13143d7870691a53c726d695505206b101d7b5f099f01a4a6895c92"
+      "sha256": "647c5c153dde3fdfb0ac806dd54dc834b7169db8b5c171129daa18b852869722"
     },
     {
       "path": "install.cmd",
@@ -84,8 +84,8 @@
     },
     {
       "path": "patch_files/game_messages.csv",
-      "size": 7403253,
-      "sha256": "12289ac7d345a815b00ea605b357184f2b3218734774ee69b57bca3f36839ce7"
+      "size": 7403263,
+      "sha256": "0ad4b2349fb16d5de0bc5ee0f5e85d6297749f3fc5ae07ff98d61daf1839098a"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
@@ -370,7 +370,7 @@
     {
       "path": "patch_files/manifest.json",
       "size": 10762,
-      "sha256": "fe7524b9d73ea9f3f803d0114d1a5386fea9186a681b0941f47928b437878491"
+      "sha256": "0b0ff37a2a60ae046f86953e1bb2b50a0706e9947015f1b3b77c7205809b11f0"
     },
     {
       "path": "restore.cmd",
