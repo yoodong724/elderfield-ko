@@ -1,4 +1,4 @@
-Welcome to Elderfield 한국어 패치 v1.0.0-rc9
+Welcome to Elderfield 한국어 패치 v1.0.0-rc10
 
 아직 게임 전체 정상 동작이 확인되지 않은 시험 배포본입니다.
 

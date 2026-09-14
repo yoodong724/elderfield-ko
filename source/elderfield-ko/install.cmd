@@ -13,6 +13,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -87,6 +88,8 @@ if not exist "%BACKUP_DIR%\.v101" call :upgrade_backup_v101
 if errorlevel 1 goto failed
 if not exist "%BACKUP_DIR%\.rc2" call :upgrade_backup_rc2
 if errorlevel 1 goto failed
+if not exist "%BACKUP_DIR%\.audio-v1" call :upgrade_backup_audio
+if errorlevel 1 goto failed
 
 call :copy_patch
 if errorlevel 1 goto rollback
@@ -107,6 +110,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -166,6 +170,12 @@ for %%F in (
 break >"%BACKUP_DIR%\.ready"
 break >"%BACKUP_DIR%\.v101"
 break >"%BACKUP_DIR%\.rc2"
+break >"%BACKUP_DIR%\.audio-v1"
+exit /b 0
+
+:upgrade_backup_audio
+call :backup_one "js\plugins\Hendrix_Localization_Overrides_Module.js" || exit /b 1
+break >"%BACKUP_DIR%\.audio-v1"
 exit /b 0
 
 :upgrade_backup_v101
@@ -245,6 +255,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"

@@ -25,6 +25,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"

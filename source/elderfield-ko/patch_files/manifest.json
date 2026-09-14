@@ -1,18 +1,27 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "1.0.0-rc9",
+  "patch_version": "1.0.0-rc10",
   "source_revision": "csv-7a17db7f55e3408c",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "075d9101863c8f69fe974eced4cf5508bf445092443b1c629e43608efdb92181",
+  "translation_snapshot_sha256": "c6841833f28161a0af98d4f2be5b968ee34d8619ddc5d6e6eb99037a56fbd538",
   "source_game_messages_sha256": "7a17db7f55e3408c7de6cfe8322a07c57e71cf7ace9f03344f9cfa872b4b9cc5",
   "translated_rows": 15419,
   "unique_translations": 15253,
   "reviewed_image_assets": 48,
+  "script_audio_fix": {
+    "source_js": "/mnt/d/GAME/Steam/steamapps/common/Welcome to Elderfield - Full Game/js/plugins/Hendrix_Localization_Overrides_Module.js",
+    "output_js": "/home/jhj0120/project/translate/ElderField/work/stage8/package-build-20260912/overlay/js/plugins/Hendrix_Localization_Overrides_Module.js",
+    "source_sha256": "c36dddeb062146acffefb7eafa68dc6a869556e69bac8848a8fa97b900070d04",
+    "output_sha256": "f010fbf56a6065c8c0e515be2c45085e506aba63e894b78d80f448f110aa1361",
+    "audio_asset_name_count": 401,
+    "milk_guarded": true,
+    "changed": true
+  },
   "files": [
     {
       "path": "game_messages.csv",
       "size": 7403323,
-      "sha256": "f47a737b38975d62e742028fb81f5120591194f1f72a63544cb5cc38765b204c"
+      "sha256": "6083697950d72c91d0ccdff47d2d6d11abf26889a395f5164d82fd81ef2ddf89"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",
@@ -303,6 +312,11 @@
       "path": "img/titles2/Command_6_ch.png_",
       "size": 2309,
       "sha256": "482c2f197e67ef0f3d4866774b80a37996aaf97c10763a2619d47bffbf8c2540"
+    },
+    {
+      "path": "js/plugins/Hendrix_Localization_Overrides_Module.js",
+      "size": 40814,
+      "sha256": "f010fbf56a6065c8c0e515be2c45085e506aba63e894b78d80f448f110aa1361"
     }
   ]
 }

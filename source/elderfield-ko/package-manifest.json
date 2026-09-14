@@ -5,6 +5,7 @@
     "game_messages.csv",
     "fonts/NotoSansCJKkr-Regular.otf",
     "js/plugins.js",
+    "js/plugins/Hendrix_Localization_Overrides_Module.js",
     "img/titles2/Command_0_ch.png_",
     "img/titles2/Command_1_ch.png_",
     "img/titles2/Command_2_ch.png_",
@@ -64,13 +65,13 @@
   "files": [
     {
       "path": "README.txt",
-      "size": 318,
-      "sha256": "407b623bb782b44061745a1dc4ad1b3271d09674aebd77b117f7c900a21ed494"
+      "size": 319,
+      "sha256": "b9bfc1d61390d0fc1eaf25b837a27347dcf8a089ab0386211149681283839d83"
     },
     {
       "path": "install.cmd",
-      "size": 12673,
-      "sha256": "fff37a8d7698d2604014fe3d32e06b8f1281f51d5cf51db0f9b8fa102627497b"
+      "size": 13126,
+      "sha256": "7825212c6f657876cffcd38225ca1b63e1eb18adcac4f4f571e77886ee0a9239"
     },
     {
       "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
@@ -85,7 +86,7 @@
     {
       "path": "patch_files/game_messages.csv",
       "size": 7403323,
-      "sha256": "f47a737b38975d62e742028fb81f5120591194f1f72a63544cb5cc38765b204c"
+      "sha256": "6083697950d72c91d0ccdff47d2d6d11abf26889a395f5164d82fd81ef2ddf89"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
@@ -363,19 +364,24 @@
       "sha256": "482c2f197e67ef0f3d4866774b80a37996aaf97c10763a2619d47bffbf8c2540"
     },
     {
+      "path": "patch_files/js/plugins/Hendrix_Localization_Overrides_Module.js",
+      "size": 40814,
+      "sha256": "f010fbf56a6065c8c0e515be2c45085e506aba63e894b78d80f448f110aa1361"
+    },
+    {
       "path": "patch_files/js/plugins.js",
       "size": 5985344,
       "sha256": "8dafea71db94d2d961c832202e589243fae81fc3f89b8140c2bb8dc32547670e"
     },
     {
       "path": "patch_files/manifest.json",
-      "size": 10762,
-      "sha256": "e83203c1686e000dc0844bd30a488e85e970c743433df6e189bfafb1e8fe3b15"
+      "size": 11536,
+      "sha256": "42a106489eaeab0505216dde95a16fef461880c5da20e73d295cb0d17ca1673d"
     },
     {
       "path": "restore.cmd",
-      "size": 3968,
-      "sha256": "246ef854e9e9bdcce409fa6d2dcf592bbc3a552f7361b03c2d9f4bddc603b101"
+      "size": 4025,
+      "sha256": "a09412360f77d782e1aab17fc33a5ff5c5139d31539e9ba378cc552c6015a42f"
     }
   ]
 }
