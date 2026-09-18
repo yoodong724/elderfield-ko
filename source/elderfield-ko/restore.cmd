@@ -3,7 +3,7 @@ chcp 65001 >nul
 setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
-set "BACKUP_DIR=%~dp0backup"
+set "BACKUP_DIR=%~dp0backup-build-25397593"
 
 if not exist "%GAME_DIR%\Game.exe" (
   echo [오류] elderfield-ko 폴더를 Game.exe가 있는 게임 폴더 안에 넣어 주세요.
@@ -25,7 +25,6 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
-  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"

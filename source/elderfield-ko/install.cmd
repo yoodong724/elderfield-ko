@@ -4,16 +4,27 @@ setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
 set "PATCH_DIR=%~dp0patch_files"
-set "BACKUP_DIR=%~dp0backup"
+set "BACKUP_DIR=%~dp0backup-build-25397593"
 
 if not exist "%GAME_DIR%\Game.exe" goto wrong_folder
 if not exist "%GAME_DIR%\game_messages.csv" goto wrong_folder
+if not exist "%GAME_DIR%\data\System.json" goto wrong_folder
+if not exist "%GAME_DIR%\js\plugins.js" goto wrong_folder
+
+if exist "%BACKUP_DIR%" if not exist "%BACKUP_DIR%\.ready" (
+  echo [오류] 불완전한 Build 25397593 백업 폴더가 있습니다.
+  echo elderfield-ko\backup-build-25397593 폴더를 확인해 주세요.
+  pause
+  exit /b 1
+)
+
+call :preflight
+if errorlevel 1 goto unsupported_build
 
 for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
-  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -75,20 +86,7 @@ for %%F in (
   exit /b 1
 )
 
-if exist "%BACKUP_DIR%" if not exist "%BACKUP_DIR%\.ready" (
-  echo [오류] 불완전한 백업 폴더가 있습니다.
-  echo elderfield-ko\backup 폴더를 확인해 주세요.
-  pause
-  exit /b 1
-)
-
 if not exist "%BACKUP_DIR%\.ready" call :make_backup
-if errorlevel 1 goto failed
-if not exist "%BACKUP_DIR%\.v101" call :upgrade_backup_v101
-if errorlevel 1 goto failed
-if not exist "%BACKUP_DIR%\.rc2" call :upgrade_backup_rc2
-if errorlevel 1 goto failed
-if not exist "%BACKUP_DIR%\.audio-v1" call :upgrade_backup_audio
 if errorlevel 1 goto failed
 
 call :copy_patch
@@ -103,6 +101,31 @@ echo [오류] elderfield-ko 폴더를 Game.exe가 있는 게임 폴더 안에 �
 pause
 exit /b 1
 
+:unsupported_build
+echo [오류] 이 패치는 Steam Build 25397593 전용입니다.
+echo Steam에서 게임 파일을 최신 상태로 복구한 뒤 다시 시도해 주세요.
+pause
+exit /b 1
+
+:preflight
+call :verify_hash "%GAME_DIR%\data\System.json" "55ecbe5a23ccdd8159ad1174f255ffba646d2c1a0e56ce9f2cd048cffbab5569" || exit /b 1
+if exist "%BACKUP_DIR%\.ready" (
+  call :verify_hash "%BACKUP_DIR%\game_messages.csv" "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8" || exit /b 1
+) else (
+  call :verify_hash "%GAME_DIR%\game_messages.csv" "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins.js" "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8" || exit /b 1
+)
+exit /b 0
+
+:verify_hash
+setlocal EnableDelayedExpansion
+set "ACTUAL_HASH="
+for /f "skip=1 tokens=* delims=" %%H in ('certutil -hashfile "%~1" SHA256 2^>nul') do if not defined ACTUAL_HASH set "ACTUAL_HASH=%%H"
+set "ACTUAL_HASH=!ACTUAL_HASH: =!"
+if /i not "!ACTUAL_HASH!"=="%~2" (endlocal & exit /b 1)
+endlocal & exit /b 0
+
 :make_backup
 mkdir "%BACKUP_DIR%" >nul 2>nul || exit /b 1
 break >"%BACKUP_DIR%\absent.txt"
@@ -110,7 +133,6 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
-  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -168,77 +190,6 @@ for %%F in (
   "img\titles2\Command_6_ch.png_"
 ) do call :backup_one "%%~F" || exit /b 1
 break >"%BACKUP_DIR%\.ready"
-break >"%BACKUP_DIR%\.v101"
-break >"%BACKUP_DIR%\.rc2"
-break >"%BACKUP_DIR%\.audio-v1"
-exit /b 0
-
-:upgrade_backup_audio
-call :backup_one "js\plugins\Hendrix_Localization_Overrides_Module.js" || exit /b 1
-break >"%BACKUP_DIR%\.audio-v1"
-exit /b 0
-
-:upgrade_backup_v101
-for %%F in (
-  "img\pictures\CustScene\who_ch.png_"
-  "img\pictures\CustScene\are_ch.png_"
-  "img\pictures\CustScene\you_ch.png_"
-) do call :backup_one "%%~F" || exit /b 1
-break >"%BACKUP_DIR%\.v101"
-exit /b 0
-
-:upgrade_backup_rc2
-for %%F in (
-  "img\pictures\Calendar\SeasonofDeath_ch.png_"
-  "img\pictures\Calendar\SeasonofRebirth_ch.png_"
-  "img\pictures\Calendar\SeasonoftheHarvest_ch.png_"
-  "img\pictures\Calendar\SeasonoftheWitch_ch.png_"
-  "img\pictures\ControlPrompts\ALLPAD\ExtraControls_ALLPAD_ch.png_"
-  "img\pictures\ControlPrompts\ALLPAD\Move_ALLPAD_ch.png_"
-  "img\pictures\ControlPrompts\ALLPAD\Turn in Place_ALLPAD_ch.png_"
-  "img\pictures\ControlPrompts\PC\ExtraControls_PC_ch.png_"
-  "img\pictures\ControlPrompts\PC\Interact_PC_ch.png_"
-  "img\pictures\ControlPrompts\PC\Menu_PC_ch.png_"
-  "img\pictures\ControlPrompts\PC\Move_PC_ch.png_"
-  "img\pictures\ControlPrompts\PC\Sprint_PC_ch.png_"
-  "img\pictures\ControlPrompts\PC\Turn in Place_PC_ch.png_"
-  "img\pictures\ControlPrompts\PS\Interact_PS_ch.png_"
-  "img\pictures\ControlPrompts\PS\Menu_PS_ch.png_"
-  "img\pictures\ControlPrompts\PS\Sprint_PS_ch.png_"
-  "img\pictures\ControlPrompts\SW\Interact_SW_ch.png_"
-  "img\pictures\ControlPrompts\SW\Menu_SW_ch.png_"
-  "img\pictures\ControlPrompts\SW\Sprint_SW_ch.png_"
-  "img\pictures\ControlPrompts\XBOX\Interact_XBOX_ch.png_"
-  "img\pictures\ControlPrompts\XBOX\Menu_XBOX_ch.png_"
-  "img\pictures\ControlPrompts\XBOX\Sprint_XBOX_ch.png_"
-  "img\pictures\LoadingFarm_ch.png_"
-  "img\pictures\LoadingLarge_ch.png_"
-  "img\pictures\Luck_Lucky_ch.png_"
-  "img\pictures\Luck_Neutral_ch.png_"
-  "img\pictures\Luck_Unlucky_ch.png_"
-  "img\pictures\Radio\3_ch.png_"
-  "img\pictures\Seasons\Banner0_ch.png_"
-  "img\pictures\Seasons\Banner1_ch.png_"
-  "img\pictures\Seasons\Banner2_ch.png_"
-  "img\pictures\Seasons\Banner3_ch.png_"
-  "img\pictures\Signs\watch1_ch.png_"
-  "img\pictures\Signs\watch2_ch.png_"
-  "img\pictures\Signs\watch3_ch.png_"
-  "img\pictures\Signs\watch4_ch.png_"
-  "img\pictures\Tutorial\combat1_ch.png_"
-  "img\pictures\Tutorial\combat7_ch.png_"
-  "img\pictures\Tutorial\combat8_ch.png_"
-  "img\pictures\Tutorial Images\combat8_ch.png_"
-  "img\pictures\UpdatingCrops_ch.png_"
-  "img\pictures\hweenDice\TREAT_ch.png_"
-  "img\pictures\hweenDice\TRICK_ch.png_"
-  "img\pictures\map_ch.png_"
-  "img\pictures\relationship bar\decrease_ch.png_"
-  "img\pictures\relationship bar\increased_ch.png_"
-  "img\system\GameOver_ch.png_"
-  "img\titles2\Command_6_ch.png_"
-) do call :backup_one "%%~F" || exit /b 1
-break >"%BACKUP_DIR%\.rc2"
 exit /b 0
 
 :backup_one
@@ -255,7 +206,6 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
-  "js\plugins\Hendrix_Localization_Overrides_Module.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
