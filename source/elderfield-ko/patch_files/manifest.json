@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "25397593-rc1",
-  "release_tag": "v25397593-rc1",
+  "patch_version": "25397593-rc2",
+  "release_tag": "v25397593-rc2",
   "steam": {
     "app_id": "3195440",
     "build_id": "25397593",
     "depot_id": "3195441",
     "depot_manifest": "6099144519796784371"
   },
-  "source_revision": "csv-fa631847c48696e8",
+  "source_revision": "runtime-a93fa14875845dbf",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "3dcbb3262f8e4f06877e0ef246ad25202a0128850d015ce222c00747dab9a44a",
+  "translation_snapshot_sha256": "5261dd55fb36cb5f5f1a195b4db07171846ad44a34c490c66b5302f9c2b5a5f0",
   "source_hashes": {
     "game_messages.csv": "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81",
     "data/System.json": "55ecbe5a23ccdd8159ad1174f255ffba646d2c1a0e56ce9f2cd048cffbab5569",
     "js/plugins.js": "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8"
   },
   "source_encryption_key_sha256": "290d42eed43612eae3e0bbb06cf553ec738b3491cfa3c601bffeed17c9589dca",
-  "translated_rows": 15424,
-  "unique_translations": 15258,
+  "translated_rows": 15544,
+  "unique_translations": 15378,
   "reviewed_image_assets": 48,
   "reencrypted_image_assets": 55,
   "image_migrations": [
@@ -356,8 +356,8 @@
   "files": [
     {
       "path": "game_messages.csv",
-      "size": 7404982,
-      "sha256": "c3c78abe7fa8e3728738ba8b1844ad7155c7e58c849857f3c59ece9b63de8330"
+      "size": 7435252,
+      "sha256": "6f32dacd84eb9479be98b8170dc77a50565be95d846bb83dce1076b2b8c26afe"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",
