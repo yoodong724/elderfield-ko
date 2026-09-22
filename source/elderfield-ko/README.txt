@@ -1,7 +1,7 @@
-Welcome to Elderfield 한국어 패치 v25397593-rc2
+Welcome to Elderfield 한국어 패치 v25459455-rc1
 
 지원 게임: Steam Windows판
-지원 Steam Build ID: 25397593
+지원 Steam Build ID: 25459455
 Steam App ID: 3195440
 
 아직 게임 전체 정상 동작이 확인되지 않은 시험 배포본입니다.

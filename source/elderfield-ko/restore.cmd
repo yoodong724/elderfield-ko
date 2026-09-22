@@ -3,7 +3,7 @@ chcp 65001 >nul
 setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
-set "BACKUP_DIR=%~dp0backup-build-25397593"
+set "BACKUP_DIR=%~dp0backup-build-25459455"
 
 if not exist "%GAME_DIR%\Game.exe" (
   echo [오류] elderfield-ko 폴더를 Game.exe가 있는 게임 폴더 안에 넣어 주세요.

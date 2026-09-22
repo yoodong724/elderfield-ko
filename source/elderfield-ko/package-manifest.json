@@ -1,18 +1,18 @@
 {
   "schema_version": "1.0.0",
   "archive_root": "elderfield-ko",
-  "patch_version": "25397593-rc2",
-  "release_tag": "v25397593-rc2",
+  "patch_version": "25459455-rc1",
+  "release_tag": "v25459455-rc1",
   "steam": {
     "app_id": "3195440",
-    "build_id": "25397593",
+    "build_id": "25459455",
     "depot_id": "3195441",
-    "depot_manifest": "6099144519796784371"
+    "depot_manifest": "7008274225876281874"
   },
   "source_hashes": {
-    "game_messages.csv": "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81",
-    "data/System.json": "55ecbe5a23ccdd8159ad1174f255ffba646d2c1a0e56ce9f2cd048cffbab5569",
-    "js/plugins.js": "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8"
+    "game_messages.csv": "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4",
+    "data/System.json": "60877d092e6665f23f9016e46032dc258f5e320e5484ac3e8d09c9801d52fe9a",
+    "js/plugins.js": "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90"
   },
   "install_targets": [
     "game_messages.csv",
@@ -78,12 +78,12 @@
     {
       "path": "README.txt",
       "size": 738,
-      "sha256": "ded6e8faa86736cd41af5d0493cefb0fdce4b2b2496b3ba2e500c00be8e4c76f"
+      "sha256": "bb608ac0e94d34e7bd3f14cad83b1decd77a519d86b68e10e425ea4cfe5c9ea8"
     },
     {
       "path": "install.cmd",
       "size": 11255,
-      "sha256": "4ab9ef8ea0ac083a9595a2ece9dbb3e05b3e28b7af3cffb60331ce08dcc526ec"
+      "sha256": "875c905e9f29f60e0cd8f811a87a8ac04413cbd7690bc228fa6aa286257bbef9"
     },
     {
       "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
@@ -97,298 +97,298 @@
     },
     {
       "path": "patch_files/game_messages.csv",
-      "size": 7435252,
-      "sha256": "6f32dacd84eb9479be98b8170dc77a50565be95d846bb83dce1076b2b8c26afe"
+      "size": 7409932,
+      "sha256": "75aff132a4d6b0056a05c56e0e40d0af8901386b30b55e6a51b176efdd4e120c"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
       "size": 40504,
-      "sha256": "cfac975c3df6d80f93eb56a3d0a5f5967f226a0dd68c37a451957a5d2f02b7ac"
+      "sha256": "669b4c290fac25c2f4f4d21ed88b04e0ae6735746601ef284fcea608a0718b7c"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofRebirth_ch.png_",
       "size": 38647,
-      "sha256": "fda8bcfaf09fb92791c397b40ef5015f29355db6d6c28829d18d692dcda34924"
+      "sha256": "dbdf8d94fa15e2dac11682e87d9792afdd2ab062475559a255311be33d0f89a5"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonoftheHarvest_ch.png_",
       "size": 39244,
-      "sha256": "a552c6b736a49affb989eded603be6ee3292b2d59edcc9f26de784424d42ec04"
+      "sha256": "a40dbf54b54cd3f57000ab3ae4b38bea4aa49e49ba10f2275ceaa7f971753f9b"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonoftheWitch_ch.png_",
       "size": 37817,
-      "sha256": "d42f44abf3f834e433d5159aafd1fb1fd212e8f734fc802054a04ec871c74d25"
+      "sha256": "c3c61660528684c66c503edbf83f4ec468ff2845b56fef3359b1a451617bc6a0"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/ExtraControls_ALLPAD_ch.png_",
       "size": 20141,
-      "sha256": "408c5b4571fcdb3a8169aaee8e824655b3fb0e8fcf35f23ee9716c963a467ce3"
+      "sha256": "1fca253af76c44e67f00523c21816909f007e2ba9627d6f4b7c5c9e64dfb6c73"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/Move_ALLPAD_ch.png_",
       "size": 5174,
-      "sha256": "a4b23d88bdff9afff5415fe7d1ce4cb590498d6d81b5a4d710962e06e223f9ac"
+      "sha256": "3f177961e957ee86a1b53fa9a38138482f153d07724cf2c6178449ea015fc16a"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/ALLPAD/Turn in Place_ALLPAD_ch.png_",
       "size": 4909,
-      "sha256": "7b042f82ebf93047ac0f2d0d46c9183418b7e34e9a83fcba0d505e5a375a9145"
+      "sha256": "562e86aefbbe8ab6401a23dae36992985db4f7857dc96d29cde0ca4a1c6a7e20"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/ExtraControls_PC_ch.png_",
       "size": 20521,
-      "sha256": "82729eee13eeb87ca559571a7b1e5d3e62f6bef599668794d3b453b4ea1620c5"
+      "sha256": "6f7d1836d0bd64a5551b1e17d4de99054d776448335c5bb0be1a291a4a9d1ece"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/Interact_PC_ch.png_",
       "size": 6495,
-      "sha256": "035e7af0d053fc51b72fb4c0aed8b3957dd197e0ecd15b077fb68532d59f9f46"
+      "sha256": "5ce2d5714c6aae0acec7388b675e1643a4bc3411a38b5e19a88c89203897b208"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/Menu_PC_ch.png_",
       "size": 6268,
-      "sha256": "6685a766174f9582817b1e1381d5b775420478bcd0c0414306475db4060f5a67"
+      "sha256": "62e63329e234d40dec9d00caf2a90a04c86e7aabc95e476ae39e782bd70755d7"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/Move_PC_ch.png_",
       "size": 5127,
-      "sha256": "c0be642a5cbc2b9f0dc514cd01533fbbba6f65a065b69af2b3546067f83fce8c"
+      "sha256": "6bbbd43361af1aec583ef9f7c513847a94686893fd4bc6bcfb1b064f2df8e9a7"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/Sprint_PC_ch.png_",
       "size": 5292,
-      "sha256": "66aded4f45db3beaf66d67625754e61f3952b84c60aa51fc9ca039c452136555"
+      "sha256": "d31caca20ffb966b524875e69f2cb8fe644bfbe8e0b77ad8907a6ea473ebec92"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PC/Turn in Place_PC_ch.png_",
       "size": 5227,
-      "sha256": "4718620317c1ce5298d906ea6bd9d255af4a9b31235b8c1de3f859b80e23d2d9"
+      "sha256": "a1265b666bd7b61604b923672152b288f2fb69f8831eabe4179c5c8ea5e1811f"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PS/Interact_PS_ch.png_",
       "size": 5973,
-      "sha256": "55cb1f9bd722bf88fb7e803c4b4a05a336c1aa24fd4ae1160a4a7ef5cbad8f7b"
+      "sha256": "15f8a7aa4448ed2f25a831a3f9cc7a50e603aa81ce39e59047b6a26a39e95c0a"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PS/Menu_PS_ch.png_",
       "size": 6595,
-      "sha256": "3389bbc436b7f358672bde6f9948502c241bbc55a9194ea8c7a50b88f0624eb9"
+      "sha256": "419f817639fd1fca2efcf649db030d44d0c9ab4a4255e79093d7a9ec24fd2299"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/PS/Sprint_PS_ch.png_",
       "size": 5417,
-      "sha256": "ba1561e4e1f634ad8019440db7eaf58e678d3c36248d5c653730f7332ee53428"
+      "sha256": "e01216fc15b636e9ff6c437fc15d2c1727591877b37c8cfc4d2d4a29f5c58608"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/SW/Interact_SW_ch.png_",
       "size": 5930,
-      "sha256": "d45b7fae0ddac0c285491ba19b4f419bd1495c794a8ef4485f4247632996c227"
+      "sha256": "81eff34cb0e0e5aa143d261da44a7eccc0d7945934da676f58e235369b2508ea"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/SW/Menu_SW_ch.png_",
       "size": 5520,
-      "sha256": "b8d6395eadd730cf7c2c1a285fabc778f961a0810e2b5b6bfa2a2157b4a90526"
+      "sha256": "7e8ae6a911ba630597aea4f440ff92a79cfd8e7a20a5c549de85c0c564123374"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/SW/Sprint_SW_ch.png_",
       "size": 5278,
-      "sha256": "0c6cfbf6b7f48cfd5adf3ead1cd82488169d6c32d4884ff91a5cf1fcc67f5b5e"
+      "sha256": "0c868390d11ca7f2e11acddab2036463948eb027e003412ad18e83ba409d0830"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/XBOX/Interact_XBOX_ch.png_",
       "size": 5901,
-      "sha256": "3cf9c854ed12fbaa3865abf21def1334fe93e48646e8d4ce339a164607e01229"
+      "sha256": "a3e54cc7faa582766a7036b4359029439e0439a4f6d3fdfa57896d56ecade9f3"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/XBOX/Menu_XBOX_ch.png_",
       "size": 5521,
-      "sha256": "a2fff70bc4917fb08153f84b5e6d5cebf27d15ee2be081e003434c2d05c87b53"
+      "sha256": "669d112d4f6b3d3d83dbadac405500b29fe4887c75d2baf6bfa814d7521aca28"
     },
     {
       "path": "patch_files/img/pictures/ControlPrompts/XBOX/Sprint_XBOX_ch.png_",
       "size": 5239,
-      "sha256": "921c381f283ff8735fc39e2c6bb5d7fc680375cfdf63d9638918babc1701492d"
+      "sha256": "7bd24009a418dc317ede40f4c3bb0f532a6b09e0afc46e72b6f5b8abd7432c5f"
     },
     {
       "path": "patch_files/img/pictures/CustScene/are_ch.png_",
       "size": 3768,
-      "sha256": "69aed1115e99207b4de18636ac000896fd142ee9d70fde493a10896bbec190e0"
+      "sha256": "037ced77b6eb0a97071dfb36a3ccd3d594a644ebf1d12ab15b51837b1c8fe19b"
     },
     {
       "path": "patch_files/img/pictures/CustScene/who_ch.png_",
       "size": 3988,
-      "sha256": "f0590d2eb7d4e5513d3720824411c91b239433d875006a4aab5c2d3cacc6e68c"
+      "sha256": "b9cce1fbeb746e3e1ed556fb0baaed2734f5b358469183d7cc7a1f6ffc63c685"
     },
     {
       "path": "patch_files/img/pictures/CustScene/you_ch.png_",
       "size": 3932,
-      "sha256": "64d6bb999206387b5f9ac4ccde2fa5661e073e04290a8e6fce490daea02365fc"
+      "sha256": "91785df8ccc61652454d9cac694f0f6c3f282b5106e17f60c17ab2ea7e25a2f8"
     },
     {
       "path": "patch_files/img/pictures/LoadingFarm_ch.png_",
       "size": 4021,
-      "sha256": "5a85f1be300b8e73888ecb4231b29eea9775aead5f100265573bf0ec499e89eb"
+      "sha256": "82849e75cb7be0e18052aaca45023e13b06314cba666c8d06a60fc8778b16a6f"
     },
     {
       "path": "patch_files/img/pictures/LoadingLarge_ch.png_",
       "size": 4687,
-      "sha256": "c93ec061b8005742fecf90ed5d803de0d6e7206eda33d2c3fa619f61c3ad74ae"
+      "sha256": "a5961586256edec2a34ca9cadffb2c62350ed03492bd176ea028a3032f3fb111"
     },
     {
       "path": "patch_files/img/pictures/Luck_Lucky_ch.png_",
       "size": 739,
-      "sha256": "b55a049d03e7cca38e5d5aafe8bd6eb9b0da35c279d2364d657f3b65e0531bc6"
+      "sha256": "0285417f881f2f77d400d00e1c4ee60a38ab9821e580932fb2682714a40bfe4d"
     },
     {
       "path": "patch_files/img/pictures/Luck_Neutral_ch.png_",
       "size": 486,
-      "sha256": "428522662bcd91e9bf97b38bb556f837f89af03f80b037616ca664f25792d453"
+      "sha256": "de4effb75b9445b0e2478c03cf5639e4ce6ccc51c4a63d00b1398da9334305a4"
     },
     {
       "path": "patch_files/img/pictures/Luck_Unlucky_ch.png_",
       "size": 564,
-      "sha256": "6a861d8e796651bebf2dd6714ef56ba3ee4b6807b1412fa9ae3dc045b31889b1"
+      "sha256": "76cd9b9abc0449cef4a01ad1c9bdc0a3c2cc7016939cda3b84e584ea578c2adb"
     },
     {
       "path": "patch_files/img/pictures/Radio/3_ch.png_",
       "size": 229164,
-      "sha256": "95e0e86b5c1227f11f78871ee474f6df4e523572d4a1d9d92cf2778a8e37dc7a"
+      "sha256": "8f6270b19de3ba85e86e0a3b2eea0732668e2e186dc9819f7df86b7fc975f3af"
     },
     {
       "path": "patch_files/img/pictures/Seasons/Banner0_ch.png_",
       "size": 70043,
-      "sha256": "9df3c0204cbdb6ae31a2713cc99af8d18efca995c2a45e6aab6928f4438b3985"
+      "sha256": "34963377d388700e04ff79003af180308a3f10bf60dc3ab544b5e989fbbc5d53"
     },
     {
       "path": "patch_files/img/pictures/Seasons/Banner1_ch.png_",
       "size": 67806,
-      "sha256": "d1564fa4aa0a5158e2e900ba68fe9a349b98cc0f783f87fceeb64f0179a6c4cd"
+      "sha256": "aa0f498a00303544a95e1a5c92780c0aa68ad7349bda33aa9d748a537ba334f8"
     },
     {
       "path": "patch_files/img/pictures/Seasons/Banner2_ch.png_",
       "size": 64617,
-      "sha256": "5c35f5c40800484cf7e0ceeae0d719ef44ef41bb54d998476f5ebc3017db8138"
+      "sha256": "cae152472663d8b8226f484d0a4e4552bf57bb29501c6f082f0546023f8dd816"
     },
     {
       "path": "patch_files/img/pictures/Seasons/Banner3_ch.png_",
       "size": 70584,
-      "sha256": "5ef12101136444c9541efd137162ca8d0156175f0030033139d4817e385bf508"
+      "sha256": "252ddb48684b1f584e5002ce676ea948ece625d832c8456fd77fb3421bef1693"
     },
     {
       "path": "patch_files/img/pictures/Signs/watch1_ch.png_",
       "size": 6007,
-      "sha256": "c0fcd2d2ce82812baf8952428d08724510a0979675af7a7ad400cfe7dd2a93f8"
+      "sha256": "978b1afeb9bbaaf20fd9b0082673470f44180f616385e1a549f436a681f5cb39"
     },
     {
       "path": "patch_files/img/pictures/Signs/watch2_ch.png_",
       "size": 14328,
-      "sha256": "8cc1456637f59582b3267c3663c36852fd7b185b32ee4e8e5ceb9a4106dd8d88"
+      "sha256": "6494966ade411e7547f8f2f150ec50e848a8e1a404098e128cb47dab605e6b3d"
     },
     {
       "path": "patch_files/img/pictures/Signs/watch3_ch.png_",
       "size": 15630,
-      "sha256": "acb2b86783ea7305c72bc90aa93621b249adfb7c7317db9e7cf2122d1d36cb57"
+      "sha256": "8156201288a7791c965ad419c2693d0c903fe88f46cba1ef3643d0f7bf5c2dd4"
     },
     {
       "path": "patch_files/img/pictures/Signs/watch4_ch.png_",
       "size": 4634,
-      "sha256": "ef0d823b737b58087577ad846313433284ef4a972859a13eafca9950482646d6"
+      "sha256": "8f3e4add1e54af4e48bb01132dccb22c4e03df59a586a7b99f87266bb26396dd"
     },
     {
       "path": "patch_files/img/pictures/Tutorial/combat1_ch.png_",
       "size": 203650,
-      "sha256": "2d7f696ede53c4641e3aced1aa983df6eed45fe0dee4e1bdf2219458bc5318d2"
+      "sha256": "9c0a432fee6002af13da84b0bf7b14c698226f79ff30286d3b39ffa77597436a"
     },
     {
       "path": "patch_files/img/pictures/Tutorial/combat7_ch.png_",
       "size": 161089,
-      "sha256": "0bf5b5a3cb8ef552b098814ed500a1053b035fd912f4a7ce7fff631ba429fbee"
+      "sha256": "1b9bfa29b77c45bee1e1840b5c40128f4b0e125379160b2f84fa715a51dcea6f"
     },
     {
       "path": "patch_files/img/pictures/Tutorial/combat8_ch.png_",
       "size": 203930,
-      "sha256": "0e4f8a13858ba5786490c6b8f21c1bd145a0121a5f741929625e9ccfcdb4888a"
+      "sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
     },
     {
       "path": "patch_files/img/pictures/Tutorial Images/combat8_ch.png_",
       "size": 203930,
-      "sha256": "0e4f8a13858ba5786490c6b8f21c1bd145a0121a5f741929625e9ccfcdb4888a"
+      "sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
     },
     {
       "path": "patch_files/img/pictures/UpdatingCrops_ch.png_",
       "size": 7235,
-      "sha256": "907097d9897b378be696a00b4c7137716161b57e597619bd74b763e8fbf8b03a"
+      "sha256": "1c8f533c3bb3dbdca1029db16f288a03be93cd650eea587729e0a1bfd1e46d8a"
     },
     {
       "path": "patch_files/img/pictures/hweenDice/TREAT_ch.png_",
       "size": 709,
-      "sha256": "d520766988335c282aa2504ed3be9cc9776b888dfccea3daed2003200398db6e"
+      "sha256": "52e1969a457b919f6392132e5218373da8d1b6829c5e1d718493415cd2385c10"
     },
     {
       "path": "patch_files/img/pictures/hweenDice/TRICK_ch.png_",
       "size": 728,
-      "sha256": "c53c228fb4f1163775fc855106aa5f06b8919e60bf31946f5135b06d6f538a45"
+      "sha256": "4264d4f1435d406de8b46166b79d06d502fe54e3ad9bf344ec643d00e7365f69"
     },
     {
       "path": "patch_files/img/pictures/map_ch.png_",
       "size": 934462,
-      "sha256": "e4dbb7a1abfa08962d43d0880db908f08c653aebe019351bf92d521ba8f5717a"
+      "sha256": "6e2ee2b1afe725e13c1da6c185b4dc9272350cb8469ba769bb5307871b2af6fb"
     },
     {
       "path": "patch_files/img/pictures/relationship bar/decrease_ch.png_",
       "size": 1279,
-      "sha256": "0ed4808ac21ffaccd31d7d851c390867b6eb33a9f9297c10f904d555f2bc5754"
+      "sha256": "6ef9c2e3d9dba14b52e59befbe540d07ad27c2ae03d97f868407002f9e3e59d6"
     },
     {
       "path": "patch_files/img/pictures/relationship bar/increased_ch.png_",
       "size": 1273,
-      "sha256": "1f8c402c071f707d8d05cc01e7a8da5c3897744d119f4c934e8d4925cd37deb4"
+      "sha256": "201f65bfa05c4f92e659be336852d50014bc67efc4cb06410e3a87a01ffff49e"
     },
     {
       "path": "patch_files/img/system/GameOver_ch.png_",
       "size": 454886,
-      "sha256": "4af1bd5bdfe6e499373393e67d62eb1ef0727407ebd4c305ea45462e89c1c85d"
+      "sha256": "e8f496d0dc71d951ceb34dfb1d1ff8ba12fcfd18fe355e27a29829d669fab995"
     },
     {
       "path": "patch_files/img/titles2/Command_0_ch.png_",
       "size": 1715,
-      "sha256": "a83d9e77493d14ba431eeb1ea4dd5621fc8674470cb83ac881db6aabf6b5693f"
+      "sha256": "21b4121497cae6f290ef16d04283f3e7ee107e98491961cbe33d90d81cc0106d"
     },
     {
       "path": "patch_files/img/titles2/Command_1_ch.png_",
       "size": 1676,
-      "sha256": "f3ec7ee93e075ec2005f24386d61810b286e776f51202b4fb707cff004d1dd70"
+      "sha256": "cd64e06af80be2c9c95c9ffc428ecc39758a2b71f9c0c74c394267d129f9e000"
     },
     {
       "path": "patch_files/img/titles2/Command_2_ch.png_",
       "size": 1422,
-      "sha256": "4658e6c697782d0f2ca62a54ceef88316fca1d2fb79429fe503c0899f8293d6c"
+      "sha256": "2bdca48821d992fde9b8bd7f69d45fd63b356c1b716916c7601ddb56f1cbaeb0"
     },
     {
       "path": "patch_files/img/titles2/Command_3_ch.png_",
       "size": 1702,
-      "sha256": "3a74146c6156641bfff503a8858e23cc111ae2508b857f268185b7d3b124b1d1"
+      "sha256": "95ea1032c13ac22825fd8dc5a3ba2ba272a24f9b1e0ef9c8c71df18dba89e1cd"
     },
     {
       "path": "patch_files/img/titles2/Command_6_ch.png_",
       "size": 2309,
-      "sha256": "87b318964ef34825113fb8385274fb079f9718644501b675aca20cf8fdaa99a2"
+      "sha256": "89c48ace8ba540248b178589189b0ec7aacbf88dc5f4b68f5764bed6f72bf622"
     },
     {
       "path": "patch_files/js/plugins.js",
-      "size": 5968476,
-      "sha256": "6dd7731c37386d8781381c0f2d20829e48f5ae0d352cb8c140109587b8e0ab0e"
+      "size": 6064176,
+      "sha256": "919d8b534ba09e4442e5c4b5c9b6fc7ab013969e00ba03075115b71cca7ffd91"
     },
     {
       "path": "patch_files/manifest.json",
       "size": 31076,
-      "sha256": "633207420b89d68efeecf7c23d0f7d87bb798486f54694d1d16956dd61f8069d"
+      "sha256": "d7225076826821c45d6d46dfaf66ea5cf73dbe43cde22db712a96b652de3bd01"
     },
     {
       "path": "restore.cmd",
       "size": 3983,
-      "sha256": "a44e6c5a24d11a188087879a73a618f50f93662595c24803cff095699fe1ed97"
+      "sha256": "068c9d99292d08d46f3a3979c66bf5cb6c56a3a4f411dc62ec06002c3f4bf294"
     }
   ]
 }

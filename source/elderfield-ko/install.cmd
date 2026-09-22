@@ -4,7 +4,7 @@ setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
 set "PATCH_DIR=%~dp0patch_files"
-set "BACKUP_DIR=%~dp0backup-build-25397593"
+set "BACKUP_DIR=%~dp0backup-build-25459455"
 
 if not exist "%GAME_DIR%\Game.exe" goto wrong_folder
 if not exist "%GAME_DIR%\game_messages.csv" goto wrong_folder
@@ -12,8 +12,8 @@ if not exist "%GAME_DIR%\data\System.json" goto wrong_folder
 if not exist "%GAME_DIR%\js\plugins.js" goto wrong_folder
 
 if exist "%BACKUP_DIR%" if not exist "%BACKUP_DIR%\.ready" (
-  echo [오류] 불완전한 Build 25397593 백업 폴더가 있습니다.
-  echo elderfield-ko\backup-build-25397593 폴더를 확인해 주세요.
+  echo [오류] 불완전한 Build 25459455 백업 폴더가 있습니다.
+  echo elderfield-ko\backup-build-25459455 폴더를 확인해 주세요.
   pause
   exit /b 1
 )
@@ -102,19 +102,19 @@ pause
 exit /b 1
 
 :unsupported_build
-echo [오류] 이 패치는 Steam Build 25397593 전용입니다.
+echo [오류] 이 패치는 Steam Build 25459455 전용입니다.
 echo Steam에서 게임 파일을 최신 상태로 복구한 뒤 다시 시도해 주세요.
 pause
 exit /b 1
 
 :preflight
-call :verify_hash "%GAME_DIR%\data\System.json" "55ecbe5a23ccdd8159ad1174f255ffba646d2c1a0e56ce9f2cd048cffbab5569" || exit /b 1
+call :verify_hash "%GAME_DIR%\data\System.json" "60877d092e6665f23f9016e46032dc258f5e320e5484ac3e8d09c9801d52fe9a" || exit /b 1
 if exist "%BACKUP_DIR%\.ready" (
-  call :verify_hash "%BACKUP_DIR%\game_messages.csv" "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81" || exit /b 1
-  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90" || exit /b 1
 ) else (
-  call :verify_hash "%GAME_DIR%\game_messages.csv" "fa631847c48696e864f6b4d243eb9b8694c3e8024d7478f58b0c754d5752ed81" || exit /b 1
-  call :verify_hash "%GAME_DIR%\js\plugins.js" "df6a1380c2f42c6a6d6e5f6d1def725b2e44205a5e3fdc0aff83eb3b869baca8" || exit /b 1
+  call :verify_hash "%GAME_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins.js" "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90" || exit /b 1
 )
 exit /b 0
 
