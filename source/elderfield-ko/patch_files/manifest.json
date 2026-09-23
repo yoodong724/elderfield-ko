@@ -1,22 +1,23 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "25459455-rc2",
-  "release_tag": "v25459455-rc2",
+  "patch_version": "1.0.2a-25483278-rc2",
+  "release_tag": "v1.0.2a-25483278-rc2",
   "steam": {
     "app_id": "3195440",
-    "build_id": "25459455",
+    "build_id": "25483278",
     "depot_id": "3195441",
-    "depot_manifest": "7008274225876281874"
+    "depot_manifest": null
   },
   "source_revision": "runtime-0bcac0872257b8ca",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "bce1ba8fdeafa7eefc9a62095c33f2e573226d8d849a6b478001f953dc0babbe",
+  "translation_snapshot_sha256": "b9748b2b9b228d40872af5624a90635d1e062cfa7adfdda98b4ba496871d7ad8",
   "source_hashes": {
     "game_messages.csv": "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4",
-    "data/System.json": "60877d092e6665f23f9016e46032dc258f5e320e5484ac3e8d09c9801d52fe9a",
-    "js/plugins.js": "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90"
+    "data/System.json": "45c371cbda68cf3a7aa1ca9500dc3d3d563c93108decdbc57f68117aa86819c3",
+    "js/plugins.js": "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281",
+    "js/plugins/WTE_OverburdenedDiscardFix.js": "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae"
   },
-  "source_encryption_key_sha256": "b27d2e2cf1175017a9fd81b1ae138247c79b3dea4509fb8fd81ea042121e7a68",
+  "source_encryption_key_sha256": "da867a005a717f6fcb6496057564432f430fbe057013fae60569d298a7d03331",
   "translated_rows": 15435,
   "unique_translations": 15263,
   "reviewed_image_assets": 48,
@@ -26,338 +27,338 @@
       "path": "img/titles2/Command_0_ch.png_",
       "legacy_encrypted_sha256": "ca5239076374a76b7852703d18bf958ed0d693b572222b5b3c919d9c538d1b2f",
       "plaintext_sha256": "3f35bbdb0f7edd56deab523a6b75e8463bacbc233befbdd4239ac13199ec13d8",
-      "encrypted_sha256": "21b4121497cae6f290ef16d04283f3e7ee107e98491961cbe33d90d81cc0106d"
+      "encrypted_sha256": "46d48f9b60e066153ffc668d59108e02fefdd49b118e7c41f078d79106c8ef79"
     },
     {
       "path": "img/titles2/Command_1_ch.png_",
       "legacy_encrypted_sha256": "1539dfe73dd4732c288720c78f966a9d8445bda03f030b3aa8a6129eea753db9",
       "plaintext_sha256": "8632c34a0951f2390d3262e69a4724ffee1951ea7ffe9a3e312e061de00d6afb",
-      "encrypted_sha256": "cd64e06af80be2c9c95c9ffc428ecc39758a2b71f9c0c74c394267d129f9e000"
+      "encrypted_sha256": "8aae5ddd9a3f76fc40d328132c72814652c32dbee61a40637f271e13e0bf2819"
     },
     {
       "path": "img/titles2/Command_2_ch.png_",
       "legacy_encrypted_sha256": "ac31d040fd2c9c6f2c604e97dc327f61300d3f1a2cc30e1d5d7535b279cc6238",
       "plaintext_sha256": "e3c2999eb3b80b0817b807ee14a06371271f604f86a19c759b64827bdbcde15c",
-      "encrypted_sha256": "2bdca48821d992fde9b8bd7f69d45fd63b356c1b716916c7601ddb56f1cbaeb0"
+      "encrypted_sha256": "cc255e4f2431ac4480f04fd5aa7e7327d48336548df41c9e6fecc202b5cf0683"
     },
     {
       "path": "img/titles2/Command_3_ch.png_",
       "legacy_encrypted_sha256": "b29e11ebc63b1ce1529e8b04655946361cadd1761713d9e8763fef3396663818",
       "plaintext_sha256": "6b515105fe1c6f7c831e89fcd7d9c3726f351de6c4c9a50a1d286032238e6935",
-      "encrypted_sha256": "95ea1032c13ac22825fd8dc5a3ba2ba272a24f9b1e0ef9c8c71df18dba89e1cd"
+      "encrypted_sha256": "f1f326fff0b6c0a3e0ed26984b0ea97d65848f809d4e334798135b397310cd06"
     },
     {
       "path": "img/pictures/CustScene/who_ch.png_",
       "legacy_encrypted_sha256": "1531126d49a33fbfcfbaa7cf7c32575c8967b5284c29e26cb88ec8c5ce6bc44a",
       "plaintext_sha256": "0a7189dfc0f178664b908ee075380a0678abec0f92b56af9c402e519d0284d9f",
-      "encrypted_sha256": "b9cce1fbeb746e3e1ed556fb0baaed2734f5b358469183d7cc7a1f6ffc63c685"
+      "encrypted_sha256": "88dc2699bd79e101fa36c094eb542f08c0f75609e52533ef7cc551e030e66351"
     },
     {
       "path": "img/pictures/CustScene/are_ch.png_",
       "legacy_encrypted_sha256": "667c3f95d5d74bd167a70742fa2a6bcc25b720b1b456aae96a8ea94b0a13ec05",
       "plaintext_sha256": "13af3a0b7bbdc97439e4a1aa1e73bdb9b71f62bde3f651cf11de8ecdac092216",
-      "encrypted_sha256": "037ced77b6eb0a97071dfb36a3ccd3d594a644ebf1d12ab15b51837b1c8fe19b"
+      "encrypted_sha256": "247c2696ad2ea53311ea7e38d5f4314c8ff6c13d7f6355870c804d72cc2413da"
     },
     {
       "path": "img/pictures/CustScene/you_ch.png_",
       "legacy_encrypted_sha256": "01e0ecdb2ed64dca87ea6187b005eaea6593d1f12ace9665cc91dfc4622ebe75",
       "plaintext_sha256": "95a88bffa34320bda2feead115441e2b07d1cb8769cb6e461b260ca4a37ca75b",
-      "encrypted_sha256": "91785df8ccc61652454d9cac694f0f6c3f282b5106e17f60c17ab2ea7e25a2f8"
+      "encrypted_sha256": "56e0d919606809ac8e024b89df09dee63389203b59c09f7cd265dd1f7de003aa"
     },
     {
       "path": "img/pictures/Calendar/SeasonofDeath_ch.png_",
       "legacy_encrypted_sha256": "a6ab1ece56594bbc6c8c46f26f51683a155a9f9d81523aadea75f32b401a208d",
       "plaintext_sha256": "be5e88ff0fe6d2c7790ecc2ef8d9f0009fce3c98620953804011a3bf94e38577",
-      "encrypted_sha256": "669b4c290fac25c2f4f4d21ed88b04e0ae6735746601ef284fcea608a0718b7c"
+      "encrypted_sha256": "f5e49dea678af39a0c818b713a209416c0d8b5ef033dc4de0dba7e9624a6dc8e"
     },
     {
       "path": "img/pictures/Calendar/SeasonofRebirth_ch.png_",
       "legacy_encrypted_sha256": "73edcc0ef8012016277f99dbe88dbda8aa2895da65f01a6a85c4390212f51f3f",
       "plaintext_sha256": "928c70cb5e9586b1bb57ce62873d9846f0b8dc95052169e6ee5a757481a4f8dc",
-      "encrypted_sha256": "dbdf8d94fa15e2dac11682e87d9792afdd2ab062475559a255311be33d0f89a5"
+      "encrypted_sha256": "773c8d53cfb96182158b42a829866baaabee4cb357907c8b5c8a5485f9420080"
     },
     {
       "path": "img/pictures/Calendar/SeasonoftheHarvest_ch.png_",
       "legacy_encrypted_sha256": "876950c07ec7e1807e332dc2915b91116c31106e90cd4a38df02c841130f3ca7",
       "plaintext_sha256": "e0ca934635dc07167a556ed76ed27d8f68d6d872498dfd1156d40a35596f2577",
-      "encrypted_sha256": "a40dbf54b54cd3f57000ab3ae4b38bea4aa49e49ba10f2275ceaa7f971753f9b"
+      "encrypted_sha256": "eafeff1ba7f30d74ea08d850174371978991e61ad60061a59d1a705bb9400490"
     },
     {
       "path": "img/pictures/Calendar/SeasonoftheWitch_ch.png_",
       "legacy_encrypted_sha256": "e2c9d2b696ed03130a8e1810cbc67f8db45fcbfe1547779bdc4f23d131f4be12",
       "plaintext_sha256": "8443b9888b1dd80abac8935bc3a2ba49b4af5cd5bb031d1ddee3c402108c4720",
-      "encrypted_sha256": "c3c61660528684c66c503edbf83f4ec468ff2845b56fef3359b1a451617bc6a0"
+      "encrypted_sha256": "8a9bd242d8bc73e6fbdeb029e50d77cf6ed9f10eb3600f7202c99445f8510442"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/ExtraControls_ALLPAD_ch.png_",
       "legacy_encrypted_sha256": "82080198fb2217ce1e9440f363eb17d0f56e57edf367238a3ba4c41e323d5728",
       "plaintext_sha256": "9212373adec1cc586d3a6daf0bd9da4de0c891895a25fd2f3aee31589e81cb9e",
-      "encrypted_sha256": "1fca253af76c44e67f00523c21816909f007e2ba9627d6f4b7c5c9e64dfb6c73"
+      "encrypted_sha256": "b5bfc1f725202e032b6abc3bb0e3a8c880e57b192fe356b3559d58553b81e054"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/Move_ALLPAD_ch.png_",
       "legacy_encrypted_sha256": "964f34b65904ad83309d97122d8131aa77625f2f5597b5548595839903b88b5e",
       "plaintext_sha256": "5e250e6208f6e62853285380dfc3efbd47eb1d247b640b377beef6fc76d16821",
-      "encrypted_sha256": "3f177961e957ee86a1b53fa9a38138482f153d07724cf2c6178449ea015fc16a"
+      "encrypted_sha256": "0cb356a6d679b6f83b44771d5be12a218fcc89d9029f5389b2d21d98560a0948"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/Turn in Place_ALLPAD_ch.png_",
       "legacy_encrypted_sha256": "1352a5238b463dcbe19aa288655f13a9598b35ffdb526607e49961bd78810b0a",
       "plaintext_sha256": "044529ee526a5d9eb657d05daa21f81d6adbe491446d111c5bccf0a9ceb6323f",
-      "encrypted_sha256": "562e86aefbbe8ab6401a23dae36992985db4f7857dc96d29cde0ca4a1c6a7e20"
+      "encrypted_sha256": "73f54bc41f1128ee12c3620c2063b5c8f0396d7b916b37284e0b170a1c5c439b"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/ExtraControls_PC_ch.png_",
       "legacy_encrypted_sha256": "165e91a6d2a96b3fc21aa2d480b67640f628100223903f8a361894d610887e96",
       "plaintext_sha256": "c634fb41e5989134c9b2ae75e7eeb5b69e82a50c7eb484b875586a96f4561247",
-      "encrypted_sha256": "6f7d1836d0bd64a5551b1e17d4de99054d776448335c5bb0be1a291a4a9d1ece"
+      "encrypted_sha256": "85d4562c8062765b37628a6c8f7f82dc2f5d24c8dc6b20c99092b822d7a8fc96"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Interact_PC_ch.png_",
       "legacy_encrypted_sha256": "6f5b1a79c2f7911f40704ebefdfcc8fc9a6bdfb750927b798df5f74699b5c707",
       "plaintext_sha256": "eb078e8b60fb83049403277f21a696d0fd9585e22e4f75e90f76c70d5a89cb6f",
-      "encrypted_sha256": "5ce2d5714c6aae0acec7388b675e1643a4bc3411a38b5e19a88c89203897b208"
+      "encrypted_sha256": "fb0eb16fc8d6e6bc611eabb1cb292f183d4f31f94af939e239f457a564849ab8"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Menu_PC_ch.png_",
       "legacy_encrypted_sha256": "e3f6902365406dd2014b9fc17f91b7bfc82486f2b0e0cbb77838148520d41667",
       "plaintext_sha256": "d5ddd4471c5b501e224b1444e39007c60b5b5d3de3e0495173e5e9b3f87240fe",
-      "encrypted_sha256": "62e63329e234d40dec9d00caf2a90a04c86e7aabc95e476ae39e782bd70755d7"
+      "encrypted_sha256": "491f9620f4e83dd289c648b65bd455936f58a19c3ee2702629c3313a5b41aeb8"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Move_PC_ch.png_",
       "legacy_encrypted_sha256": "8a278d2919d0ec1e3ff93dac705bb2ffc7672f6a1a2aeded28ab392279c6c66f",
       "plaintext_sha256": "8461cd3894fdb4d4fdf6c83c133b9fedc78fa737e7e7fc6d9c152ca16ce97c08",
-      "encrypted_sha256": "6bbbd43361af1aec583ef9f7c513847a94686893fd4bc6bcfb1b064f2df8e9a7"
+      "encrypted_sha256": "085d48e06226d8704f772643e1836ee6f25c3878c6e466b2a0fa8cd34c7e20dc"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Sprint_PC_ch.png_",
       "legacy_encrypted_sha256": "131d425f9c6c24832c438af16e1b0b693c9e17c2e767a16518c89e70e1f5534f",
       "plaintext_sha256": "ef798ccedb1530aca785f46c218cd74a335d3a018227178ca069ec4c306e7c46",
-      "encrypted_sha256": "d31caca20ffb966b524875e69f2cb8fe644bfbe8e0b77ad8907a6ea473ebec92"
+      "encrypted_sha256": "76ec93308721ce94b573874411e3f926e4990bad37714fa161028acc1f5eea4d"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Turn in Place_PC_ch.png_",
       "legacy_encrypted_sha256": "10c50dd4b02874d71d77fdd43b4a39181f205f4cd5e6fba46ac57f0be8649412",
       "plaintext_sha256": "f2ff28a42c6f52031ee509fd73d701982120852b62b60fcc9e3a7dd79b185777",
-      "encrypted_sha256": "a1265b666bd7b61604b923672152b288f2fb69f8831eabe4179c5c8ea5e1811f"
+      "encrypted_sha256": "349a766bed7d5ee89a10fc54e75723c72f1214d805288f691cb82eccf8d17dc6"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Interact_PS_ch.png_",
       "legacy_encrypted_sha256": "ebe3b59f0fcf5dad542f88972293b7d284d36955d16ddd504e8a75f7ad213c80",
       "plaintext_sha256": "1c29810d9ef780d362756af95be5cafb6958ea05238060cd84209c03f42e3102",
-      "encrypted_sha256": "15f8a7aa4448ed2f25a831a3f9cc7a50e603aa81ce39e59047b6a26a39e95c0a"
+      "encrypted_sha256": "023ce7f4f3720ff369691fe854a14dbff44d3f8b9a9e3fbc864233e125c4e20f"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Menu_PS_ch.png_",
       "legacy_encrypted_sha256": "0bbc12e458fc8c4e28514465c911ab3d90daece9f2159f00b7ebe9486ab7778c",
       "plaintext_sha256": "6fe449e9769e74ad5b983b205bdb00dfe084c99866dc035724c8c1e77fae5787",
-      "encrypted_sha256": "419f817639fd1fca2efcf649db030d44d0c9ab4a4255e79093d7a9ec24fd2299"
+      "encrypted_sha256": "72afc9b10d48dbdab44299fd9fd97fffd4865f330ddc64776c94cd3f81551a04"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Sprint_PS_ch.png_",
       "legacy_encrypted_sha256": "fbcc4e7e9594fa282f6b734987bfa3491915f119b74a935c960c038413381ebd",
       "plaintext_sha256": "ee1cfb4c7bd896c4a224d14c87d2aee196584ece56654ef535d51084a009fb67",
-      "encrypted_sha256": "e01216fc15b636e9ff6c437fc15d2c1727591877b37c8cfc4d2d4a29f5c58608"
+      "encrypted_sha256": "a9bad07edd336d80042bd23e4aed91e27e157692ac0e19f9a3178dc70a2fb648"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Interact_SW_ch.png_",
       "legacy_encrypted_sha256": "00ee6acb6a6d99d4b76383ef6078e467dc82dac28629155d9a5bf95285a341ec",
       "plaintext_sha256": "312fc2c2bd812676c7632d23cdbbe06730f119ad920bc5e78d36d7350190d9e3",
-      "encrypted_sha256": "81eff34cb0e0e5aa143d261da44a7eccc0d7945934da676f58e235369b2508ea"
+      "encrypted_sha256": "d5db289f119bae935735cf645e1110c61da3f34b57381fe5bf03fcb81e51e1df"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Menu_SW_ch.png_",
       "legacy_encrypted_sha256": "85bffdcdc97b0a6bb765343b678555643d15cd3469ac221d9637355259fef409",
       "plaintext_sha256": "a2ac2a414f1d878f20b94cd706bc79ab6977c59b80e5bcd3315df954faa51ed7",
-      "encrypted_sha256": "7e8ae6a911ba630597aea4f440ff92a79cfd8e7a20a5c549de85c0c564123374"
+      "encrypted_sha256": "f36f878bf524705ffc174c2a0582d8d10e02ffe1c39de0ae65cf7e2d41d1bd32"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Sprint_SW_ch.png_",
       "legacy_encrypted_sha256": "90fda9c72edc1b26b9079f0cf54d3276995b498fd41c74a6633fce943b5d3144",
       "plaintext_sha256": "13f2657c577fed43f2915367111aa74240be51ffd9acefdabec99d877ba74eb3",
-      "encrypted_sha256": "0c868390d11ca7f2e11acddab2036463948eb027e003412ad18e83ba409d0830"
+      "encrypted_sha256": "730e71d4b98acd72fcfec25763de86f8873c70e0900230c3c982a4a0718847e6"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Interact_XBOX_ch.png_",
       "legacy_encrypted_sha256": "4ff787b1bd73a80329b7b8a3a2513d8b9a16b9068179b763e25d2690ba74ba23",
       "plaintext_sha256": "5354753f5888b84170a3fd5a2aae5b3e7524e9a6dcf3b5d0bcbc3673c20f723d",
-      "encrypted_sha256": "a3e54cc7faa582766a7036b4359029439e0439a4f6d3fdfa57896d56ecade9f3"
+      "encrypted_sha256": "8952be4861a487d9fbd46306427bf69140b37b0e7a84943e55c9f77910b497fd"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Menu_XBOX_ch.png_",
       "legacy_encrypted_sha256": "9398a5e1dfab6ae430ac9cb0e5e392a86ac53a515af5b4e4905d4aecb3feb718",
       "plaintext_sha256": "07d19ace4c7152c75c0c6ea3b27468d704cebbf56831860eaecb4d5ddf3f930d",
-      "encrypted_sha256": "669d112d4f6b3d3d83dbadac405500b29fe4887c75d2baf6bfa814d7521aca28"
+      "encrypted_sha256": "5d1911db565cb71d76e964b984a302591b64899403cedc3171b1251656e85e19"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Sprint_XBOX_ch.png_",
       "legacy_encrypted_sha256": "a1ea6a4de242deea21a45d5a7d807e53c0a58d70da7ed821aabba90626d9fe5c",
       "plaintext_sha256": "3d69ba7c7aafa01d4777dbf05e6bc6865d72685279d623459cd9536e0da812ff",
-      "encrypted_sha256": "7bd24009a418dc317ede40f4c3bb0f532a6b09e0afc46e72b6f5b8abd7432c5f"
+      "encrypted_sha256": "a83862b6e3ce775fd640be495c1a33b25cfca365885aed18d629c18743ab2b3d"
     },
     {
       "path": "img/pictures/LoadingFarm_ch.png_",
       "legacy_encrypted_sha256": "47c166f7a41515f1cb5e978811feef7292c8f5701a83ba13825d6ecf28f447ca",
       "plaintext_sha256": "ebee1275cedf7487722297cd3d7aa5a743417eaccb2c2696821e267a7cd3cd35",
-      "encrypted_sha256": "82849e75cb7be0e18052aaca45023e13b06314cba666c8d06a60fc8778b16a6f"
+      "encrypted_sha256": "1a218f6d5f11948eab1562c3d8373c842e5bda1610e3e21bc01c772bfdca6c15"
     },
     {
       "path": "img/pictures/LoadingLarge_ch.png_",
       "legacy_encrypted_sha256": "b2a22719b73774d2a7bdaee0f3362a0e90cb844d72a419bcb7d8073723b1cd0f",
       "plaintext_sha256": "15acc8654b0f0db7b252f01b483d7f1e56c62c43b9ed6815014c91d90e87973e",
-      "encrypted_sha256": "a5961586256edec2a34ca9cadffb2c62350ed03492bd176ea028a3032f3fb111"
+      "encrypted_sha256": "b796942afc9b62a2979c8ca2a983f45d90e2eb9edb1be2c286d7cd17a5372782"
     },
     {
       "path": "img/pictures/Luck_Lucky_ch.png_",
       "legacy_encrypted_sha256": "eba21b08e419ae5cc6228c76209afb7f5c3c499222d2efef999c362ade595610",
       "plaintext_sha256": "c2932b9ce2216a66b8f21bbf347077f1c438eb13bd9e852a18119471d0995478",
-      "encrypted_sha256": "0285417f881f2f77d400d00e1c4ee60a38ab9821e580932fb2682714a40bfe4d"
+      "encrypted_sha256": "85931a268c197ecfead936c316dab4444f51bbe3996b3b38600c80acc174b545"
     },
     {
       "path": "img/pictures/Luck_Neutral_ch.png_",
       "legacy_encrypted_sha256": "44ce6ac8e157176ed82232e2733ad71c90e6ef4193c9f1907b1331d14becbdf5",
       "plaintext_sha256": "3eaa282ebdb5350d0ebe008480955af96cfba2f32a17f05b7050dc24839845d3",
-      "encrypted_sha256": "de4effb75b9445b0e2478c03cf5639e4ce6ccc51c4a63d00b1398da9334305a4"
+      "encrypted_sha256": "05fbbfaed20de1a89927c651742bd18e286a0e6b744c4d4f97036c936e370824"
     },
     {
       "path": "img/pictures/Luck_Unlucky_ch.png_",
       "legacy_encrypted_sha256": "b7b8b96db4af08d2845a126cd76ac47b3469cef77858771ac7104474b464a66c",
       "plaintext_sha256": "4d214c0a51c057d36a71f8eea32db5e49071f0b31237549ee2a2b02a52ebb0ad",
-      "encrypted_sha256": "76cd9b9abc0449cef4a01ad1c9bdc0a3c2cc7016939cda3b84e584ea578c2adb"
+      "encrypted_sha256": "9fe0ae67335d995b4511e5067e3e555ab4c90b3798e06c37a84b4817e013dd12"
     },
     {
       "path": "img/pictures/Radio/3_ch.png_",
       "legacy_encrypted_sha256": "4077500eeda3aff281fd3d8dada585d6cf0d5464768f248bc2141c0ceb873b9d",
       "plaintext_sha256": "265b047beedd6e29d27d2f2e47fda291731b15cf2fcd3839145167944a278b90",
-      "encrypted_sha256": "8f6270b19de3ba85e86e0a3b2eea0732668e2e186dc9819f7df86b7fc975f3af"
+      "encrypted_sha256": "344802a63d9470dd83d35a68582327923f230448f7c90f0f41ec50afc102c283"
     },
     {
       "path": "img/pictures/Seasons/Banner0_ch.png_",
       "legacy_encrypted_sha256": "d944298c9b33723b326af5ea8ea0be6a64be773072d1cb300b3ebc1c7ef96de6",
       "plaintext_sha256": "4b81b26fa93ddb3e6901c7f6ff40b163a776263a08c951764e561dfe6ac9a511",
-      "encrypted_sha256": "34963377d388700e04ff79003af180308a3f10bf60dc3ab544b5e989fbbc5d53"
+      "encrypted_sha256": "74fd10449a3db7f828a0340702c2eb759150a45095e05b2e975cc38fab7f992a"
     },
     {
       "path": "img/pictures/Seasons/Banner1_ch.png_",
       "legacy_encrypted_sha256": "b5f07deda68b0fb5133e976456590d51b2182227093cd78ba7bc28ebe8a5878f",
       "plaintext_sha256": "e74ef48baea6485a7d00c5f4d784a77dc6fc276c0bb4edea7a2c489e13be6ff7",
-      "encrypted_sha256": "aa0f498a00303544a95e1a5c92780c0aa68ad7349bda33aa9d748a537ba334f8"
+      "encrypted_sha256": "55bd9b30e958d84a5083ebdbdf11db89c07a2704cfe605a6c8807066f39dab55"
     },
     {
       "path": "img/pictures/Seasons/Banner2_ch.png_",
       "legacy_encrypted_sha256": "ba633397739c700478d2893e68d9e53067b19d31ced4881024adc8408b70cf3f",
       "plaintext_sha256": "a8dc264f36ad1ed272f754bb6e8a30f0e3681a242233268006f19ae231a74f21",
-      "encrypted_sha256": "cae152472663d8b8226f484d0a4e4552bf57bb29501c6f082f0546023f8dd816"
+      "encrypted_sha256": "7b2978ae6e5b742b09371f387cf1f590c6951db042c36a053c58bfa9e15bd202"
     },
     {
       "path": "img/pictures/Seasons/Banner3_ch.png_",
       "legacy_encrypted_sha256": "d3e4658639e3ae976669776ff98fcd0f3ebe21c3aba826d8efa3d0020e34a4d4",
       "plaintext_sha256": "95732389dcad5b6e375d61d00267207a111d74439a4942bec1a30c2765cf6711",
-      "encrypted_sha256": "252ddb48684b1f584e5002ce676ea948ece625d832c8456fd77fb3421bef1693"
+      "encrypted_sha256": "afec5609e2d7f0d4668044616c8fbd1494ca464338696f813b49cd9706885e09"
     },
     {
       "path": "img/pictures/Signs/watch1_ch.png_",
       "legacy_encrypted_sha256": "759cee82e5affca1d7c0aa070252372c56bba630adcf4250182e2925b9691313",
       "plaintext_sha256": "184ec5180d472392754cbc47aed0bbd0928123bd0b9ef4990e6fbc3715e3e12b",
-      "encrypted_sha256": "978b1afeb9bbaaf20fd9b0082673470f44180f616385e1a549f436a681f5cb39"
+      "encrypted_sha256": "86dd5d5b35c445a6396b27baddabde491a48322b5de88280615036157d7cf652"
     },
     {
       "path": "img/pictures/Signs/watch2_ch.png_",
       "legacy_encrypted_sha256": "d1902cfa84efdaf6fa6ac6ab30fb8721a2de617b5385ef79f3d13ed52d08f707",
       "plaintext_sha256": "844c81da16154de63f7c3949fe3c2834cfe3d258113e7e85231be5a4f58d6b8b",
-      "encrypted_sha256": "6494966ade411e7547f8f2f150ec50e848a8e1a404098e128cb47dab605e6b3d"
+      "encrypted_sha256": "1930d2c39c0b2470bc51c5e2b39500f32621e5b5c84b0390ca394549968aabff"
     },
     {
       "path": "img/pictures/Signs/watch3_ch.png_",
       "legacy_encrypted_sha256": "2e601029e8e0a581142c2cfb16365ab4a710e4769dade950918137e7e122ad13",
       "plaintext_sha256": "0f41e4ff50cf62021b5e2459a8f4bb9cbd613eaeb1c5be9f2040bec7a4129852",
-      "encrypted_sha256": "8156201288a7791c965ad419c2693d0c903fe88f46cba1ef3643d0f7bf5c2dd4"
+      "encrypted_sha256": "7fcfc3d12214c1b7ac6becbb6042d1fbcebe2925e604ffdbd547257a9117d24e"
     },
     {
       "path": "img/pictures/Signs/watch4_ch.png_",
       "legacy_encrypted_sha256": "b63756ef0b3aae3756f1bf8d204030d980b791136dbf0641ebac900bb9e31b3a",
       "plaintext_sha256": "1c0dd4fec4448e2872cccd7b21b6b5b5d67fcd4ac484c201347aa283ee0ea940",
-      "encrypted_sha256": "8f3e4add1e54af4e48bb01132dccb22c4e03df59a586a7b99f87266bb26396dd"
+      "encrypted_sha256": "e8e58acb07661df908447629f389d5184fd8f8de2bcc4376be445ee5ad643346"
     },
     {
       "path": "img/pictures/Tutorial/combat1_ch.png_",
       "legacy_encrypted_sha256": "a262a93c6b7862fd08373fea2c6c550784447dabaf6315bc9abc1a3ea92654c0",
       "plaintext_sha256": "b38711b6c36ee67b9d6164993b9b6fbc3f2714b327c220bd91f88879d282d148",
-      "encrypted_sha256": "9c0a432fee6002af13da84b0bf7b14c698226f79ff30286d3b39ffa77597436a"
+      "encrypted_sha256": "338f53c9e4371b583639d3eba11e6546b12c0b9dd7871e5515ba38a02b6d4fd1"
     },
     {
       "path": "img/pictures/Tutorial/combat7_ch.png_",
       "legacy_encrypted_sha256": "6e0569435966c661452148aca1a7b03e7547d68adee93cbba6c576069f0ece02",
       "plaintext_sha256": "83435bc343f1133048cb13b34f2b5c131a2cd8e5e45718da546b7d2c69dd31c3",
-      "encrypted_sha256": "1b9bfa29b77c45bee1e1840b5c40128f4b0e125379160b2f84fa715a51dcea6f"
+      "encrypted_sha256": "0ca808e6bdcd708bfd957b608c5bbd9cb0c041081722cc20fc08df8800d611be"
     },
     {
       "path": "img/pictures/Tutorial/combat8_ch.png_",
       "legacy_encrypted_sha256": "0e7c108425eb5da71e81d21addaf1a1a901efbd9978785fd170ac6783a0f2271",
       "plaintext_sha256": "3c8cb95dbc3a28033fdfbadfad6c67503baddfc3b8aef5a37525609d5fe0192c",
-      "encrypted_sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
+      "encrypted_sha256": "69edf28588fe1f3a2e74bd96eb43811324226f20a2c6767e37f9608e40e33dad"
     },
     {
       "path": "img/pictures/Tutorial Images/combat8_ch.png_",
       "legacy_encrypted_sha256": "0e7c108425eb5da71e81d21addaf1a1a901efbd9978785fd170ac6783a0f2271",
       "plaintext_sha256": "3c8cb95dbc3a28033fdfbadfad6c67503baddfc3b8aef5a37525609d5fe0192c",
-      "encrypted_sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
+      "encrypted_sha256": "69edf28588fe1f3a2e74bd96eb43811324226f20a2c6767e37f9608e40e33dad"
     },
     {
       "path": "img/pictures/UpdatingCrops_ch.png_",
       "legacy_encrypted_sha256": "e8935bfb08dff211b7a9b3fc0e9faf342b34a331b501b334481792d5dc9fe144",
       "plaintext_sha256": "870b80c0557fbda30c21f9902ed5fd69f8b08ae5b20e0b3884619465c3e92adb",
-      "encrypted_sha256": "1c8f533c3bb3dbdca1029db16f288a03be93cd650eea587729e0a1bfd1e46d8a"
+      "encrypted_sha256": "83662f26979e21684401ab1a735c06d4a122f5368c382c285df915f6ffe80ecb"
     },
     {
       "path": "img/pictures/hweenDice/TREAT_ch.png_",
       "legacy_encrypted_sha256": "0765c48ec0946202020e4d539c89768636e4b87ced737d5c7e3f806f9b90ce1d",
       "plaintext_sha256": "5d234552fe487c820798cc6cc5ce0d64818a3a02a2fd532b261676df01c57a55",
-      "encrypted_sha256": "52e1969a457b919f6392132e5218373da8d1b6829c5e1d718493415cd2385c10"
+      "encrypted_sha256": "ba0b89ca3bfdd8f217b37bb0178fa7b25f453dd08b7e543a1db1d92088135354"
     },
     {
       "path": "img/pictures/hweenDice/TRICK_ch.png_",
       "legacy_encrypted_sha256": "da6bd80168e0e9703bb76047cf94c24936acd4055013cb254ffd54ffe08bc585",
       "plaintext_sha256": "80f6c3cd6050e2fd8b3e585be6f8934e520b1e87f0650b009fcdabc700010583",
-      "encrypted_sha256": "4264d4f1435d406de8b46166b79d06d502fe54e3ad9bf344ec643d00e7365f69"
+      "encrypted_sha256": "f162dba274de24d370dc5e4db5cf47a661cf62abcfcbea5a5f702398f7e73088"
     },
     {
       "path": "img/pictures/map_ch.png_",
       "legacy_encrypted_sha256": "65e263b35a434cb0ef84861672a535d1940663275871a8d27fdb8f7e89060622",
       "plaintext_sha256": "1386176870506b3dfb12c8b19a48f8345246c29602fcf9e15793febb38de9697",
-      "encrypted_sha256": "6e2ee2b1afe725e13c1da6c185b4dc9272350cb8469ba769bb5307871b2af6fb"
+      "encrypted_sha256": "d44e5cb284f25bfbdd69bab36b88a58ab3a37e868f89fba33cc0ae576c41eb31"
     },
     {
       "path": "img/pictures/relationship bar/decrease_ch.png_",
       "legacy_encrypted_sha256": "f7aeb8c8aadd8ece8207ef64ace37c652642b8ad6e8b2e2b5b99fe4942041117",
       "plaintext_sha256": "e59567f352956c703ffe974dd44aeac231f4dd5a184250c95929e217d3ad1b54",
-      "encrypted_sha256": "6ef9c2e3d9dba14b52e59befbe540d07ad27c2ae03d97f868407002f9e3e59d6"
+      "encrypted_sha256": "ce36513387a0cf44aa12246388730209b910529ec72a6997fcd73fad428bb980"
     },
     {
       "path": "img/pictures/relationship bar/increased_ch.png_",
       "legacy_encrypted_sha256": "8feebed7ca0f49e83ac654f4f8e9bca6ea80b943e21e34d909cc065a7d0b66da",
       "plaintext_sha256": "6230e62891bb8d886918271ceae669a5332b95a636a689e75b0d2c808690e4a9",
-      "encrypted_sha256": "201f65bfa05c4f92e659be336852d50014bc67efc4cb06410e3a87a01ffff49e"
+      "encrypted_sha256": "5f72d2c423bb958be97dc3eba9521bad3fdd2a22e4d1c058be61e78d5f8c9173"
     },
     {
       "path": "img/system/GameOver_ch.png_",
       "legacy_encrypted_sha256": "66d7254322372e119c508625f9126488c4ebca892a6fd17d443e83053da4d1b1",
       "plaintext_sha256": "b7ee4b3d5dcced121f14f22b5bb802b79f7866fcf57942bb4b613c0922d16f98",
-      "encrypted_sha256": "e8f496d0dc71d951ceb34dfb1d1ff8ba12fcfd18fe355e27a29829d669fab995"
+      "encrypted_sha256": "88adca66c21651956c2ed26339f0b45e93c6c68335657966fa20e7ac43d67969"
     },
     {
       "path": "img/titles2/Command_6_ch.png_",
       "legacy_encrypted_sha256": "482c2f197e67ef0f3d4866774b80a37996aaf97c10763a2619d47bffbf8c2540",
       "plaintext_sha256": "c2752dffc8d70377d5eb56cf27b2febee0b16b67794db95225e8a8de0b3ef77a",
-      "encrypted_sha256": "89c48ace8ba540248b178589189b0ec7aacbf88dc5f4b68f5764bed6f72bf622"
+      "encrypted_sha256": "2d4792430005a6e0f7f402404b9b47e92f6936ce0226733bdc3bbc136573e3b1"
     }
   ],
   "files": [
     {
       "path": "game_messages.csv",
-      "size": 7410202,
-      "sha256": "00d6ae7e41994686dac8b8f95a170050c6bef3d972633c12cc5554da2059e757"
+      "size": 7410182,
+      "sha256": "85416f78150249c7e7dabff39158a0c94b6b7f36d62c0091330e35232dd320e3"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",
@@ -371,283 +372,288 @@
     },
     {
       "path": "js/plugins.js",
-      "size": 6064176,
-      "sha256": "919d8b534ba09e4442e5c4b5c9b6fc7ab013969e00ba03075115b71cca7ffd91"
+      "size": 6069827,
+      "sha256": "68acdf866dac561b61a3eaa47ca526d65dc40bb88da2f65d7a88f3e4966c9ee1"
+    },
+    {
+      "path": "js/plugins/WTE_OverburdenedDiscardFix.js",
+      "size": 4076,
+      "sha256": "e0916698bc4782fbe7d531a9daa9b3eca50c0109ad5bf1b7ebcfeb3cfd6661ba"
     },
     {
       "path": "img/titles2/Command_0_ch.png_",
       "size": 1715,
-      "sha256": "21b4121497cae6f290ef16d04283f3e7ee107e98491961cbe33d90d81cc0106d"
+      "sha256": "46d48f9b60e066153ffc668d59108e02fefdd49b118e7c41f078d79106c8ef79"
     },
     {
       "path": "img/titles2/Command_1_ch.png_",
       "size": 1676,
-      "sha256": "cd64e06af80be2c9c95c9ffc428ecc39758a2b71f9c0c74c394267d129f9e000"
+      "sha256": "8aae5ddd9a3f76fc40d328132c72814652c32dbee61a40637f271e13e0bf2819"
     },
     {
       "path": "img/titles2/Command_2_ch.png_",
       "size": 1422,
-      "sha256": "2bdca48821d992fde9b8bd7f69d45fd63b356c1b716916c7601ddb56f1cbaeb0"
+      "sha256": "cc255e4f2431ac4480f04fd5aa7e7327d48336548df41c9e6fecc202b5cf0683"
     },
     {
       "path": "img/titles2/Command_3_ch.png_",
       "size": 1702,
-      "sha256": "95ea1032c13ac22825fd8dc5a3ba2ba272a24f9b1e0ef9c8c71df18dba89e1cd"
+      "sha256": "f1f326fff0b6c0a3e0ed26984b0ea97d65848f809d4e334798135b397310cd06"
     },
     {
       "path": "img/pictures/CustScene/who_ch.png_",
       "size": 3988,
-      "sha256": "b9cce1fbeb746e3e1ed556fb0baaed2734f5b358469183d7cc7a1f6ffc63c685"
+      "sha256": "88dc2699bd79e101fa36c094eb542f08c0f75609e52533ef7cc551e030e66351"
     },
     {
       "path": "img/pictures/CustScene/are_ch.png_",
       "size": 3768,
-      "sha256": "037ced77b6eb0a97071dfb36a3ccd3d594a644ebf1d12ab15b51837b1c8fe19b"
+      "sha256": "247c2696ad2ea53311ea7e38d5f4314c8ff6c13d7f6355870c804d72cc2413da"
     },
     {
       "path": "img/pictures/CustScene/you_ch.png_",
       "size": 3932,
-      "sha256": "91785df8ccc61652454d9cac694f0f6c3f282b5106e17f60c17ab2ea7e25a2f8"
+      "sha256": "56e0d919606809ac8e024b89df09dee63389203b59c09f7cd265dd1f7de003aa"
     },
     {
       "path": "img/pictures/Calendar/SeasonofDeath_ch.png_",
       "size": 40504,
-      "sha256": "669b4c290fac25c2f4f4d21ed88b04e0ae6735746601ef284fcea608a0718b7c"
+      "sha256": "f5e49dea678af39a0c818b713a209416c0d8b5ef033dc4de0dba7e9624a6dc8e"
     },
     {
       "path": "img/pictures/Calendar/SeasonofRebirth_ch.png_",
       "size": 38647,
-      "sha256": "dbdf8d94fa15e2dac11682e87d9792afdd2ab062475559a255311be33d0f89a5"
+      "sha256": "773c8d53cfb96182158b42a829866baaabee4cb357907c8b5c8a5485f9420080"
     },
     {
       "path": "img/pictures/Calendar/SeasonoftheHarvest_ch.png_",
       "size": 39244,
-      "sha256": "a40dbf54b54cd3f57000ab3ae4b38bea4aa49e49ba10f2275ceaa7f971753f9b"
+      "sha256": "eafeff1ba7f30d74ea08d850174371978991e61ad60061a59d1a705bb9400490"
     },
     {
       "path": "img/pictures/Calendar/SeasonoftheWitch_ch.png_",
       "size": 37817,
-      "sha256": "c3c61660528684c66c503edbf83f4ec468ff2845b56fef3359b1a451617bc6a0"
+      "sha256": "8a9bd242d8bc73e6fbdeb029e50d77cf6ed9f10eb3600f7202c99445f8510442"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/ExtraControls_ALLPAD_ch.png_",
       "size": 20141,
-      "sha256": "1fca253af76c44e67f00523c21816909f007e2ba9627d6f4b7c5c9e64dfb6c73"
+      "sha256": "b5bfc1f725202e032b6abc3bb0e3a8c880e57b192fe356b3559d58553b81e054"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/Move_ALLPAD_ch.png_",
       "size": 5174,
-      "sha256": "3f177961e957ee86a1b53fa9a38138482f153d07724cf2c6178449ea015fc16a"
+      "sha256": "0cb356a6d679b6f83b44771d5be12a218fcc89d9029f5389b2d21d98560a0948"
     },
     {
       "path": "img/pictures/ControlPrompts/ALLPAD/Turn in Place_ALLPAD_ch.png_",
       "size": 4909,
-      "sha256": "562e86aefbbe8ab6401a23dae36992985db4f7857dc96d29cde0ca4a1c6a7e20"
+      "sha256": "73f54bc41f1128ee12c3620c2063b5c8f0396d7b916b37284e0b170a1c5c439b"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/ExtraControls_PC_ch.png_",
       "size": 20521,
-      "sha256": "6f7d1836d0bd64a5551b1e17d4de99054d776448335c5bb0be1a291a4a9d1ece"
+      "sha256": "85d4562c8062765b37628a6c8f7f82dc2f5d24c8dc6b20c99092b822d7a8fc96"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Interact_PC_ch.png_",
       "size": 6495,
-      "sha256": "5ce2d5714c6aae0acec7388b675e1643a4bc3411a38b5e19a88c89203897b208"
+      "sha256": "fb0eb16fc8d6e6bc611eabb1cb292f183d4f31f94af939e239f457a564849ab8"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Menu_PC_ch.png_",
       "size": 6268,
-      "sha256": "62e63329e234d40dec9d00caf2a90a04c86e7aabc95e476ae39e782bd70755d7"
+      "sha256": "491f9620f4e83dd289c648b65bd455936f58a19c3ee2702629c3313a5b41aeb8"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Move_PC_ch.png_",
       "size": 5127,
-      "sha256": "6bbbd43361af1aec583ef9f7c513847a94686893fd4bc6bcfb1b064f2df8e9a7"
+      "sha256": "085d48e06226d8704f772643e1836ee6f25c3878c6e466b2a0fa8cd34c7e20dc"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Sprint_PC_ch.png_",
       "size": 5292,
-      "sha256": "d31caca20ffb966b524875e69f2cb8fe644bfbe8e0b77ad8907a6ea473ebec92"
+      "sha256": "76ec93308721ce94b573874411e3f926e4990bad37714fa161028acc1f5eea4d"
     },
     {
       "path": "img/pictures/ControlPrompts/PC/Turn in Place_PC_ch.png_",
       "size": 5227,
-      "sha256": "a1265b666bd7b61604b923672152b288f2fb69f8831eabe4179c5c8ea5e1811f"
+      "sha256": "349a766bed7d5ee89a10fc54e75723c72f1214d805288f691cb82eccf8d17dc6"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Interact_PS_ch.png_",
       "size": 5973,
-      "sha256": "15f8a7aa4448ed2f25a831a3f9cc7a50e603aa81ce39e59047b6a26a39e95c0a"
+      "sha256": "023ce7f4f3720ff369691fe854a14dbff44d3f8b9a9e3fbc864233e125c4e20f"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Menu_PS_ch.png_",
       "size": 6595,
-      "sha256": "419f817639fd1fca2efcf649db030d44d0c9ab4a4255e79093d7a9ec24fd2299"
+      "sha256": "72afc9b10d48dbdab44299fd9fd97fffd4865f330ddc64776c94cd3f81551a04"
     },
     {
       "path": "img/pictures/ControlPrompts/PS/Sprint_PS_ch.png_",
       "size": 5417,
-      "sha256": "e01216fc15b636e9ff6c437fc15d2c1727591877b37c8cfc4d2d4a29f5c58608"
+      "sha256": "a9bad07edd336d80042bd23e4aed91e27e157692ac0e19f9a3178dc70a2fb648"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Interact_SW_ch.png_",
       "size": 5930,
-      "sha256": "81eff34cb0e0e5aa143d261da44a7eccc0d7945934da676f58e235369b2508ea"
+      "sha256": "d5db289f119bae935735cf645e1110c61da3f34b57381fe5bf03fcb81e51e1df"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Menu_SW_ch.png_",
       "size": 5520,
-      "sha256": "7e8ae6a911ba630597aea4f440ff92a79cfd8e7a20a5c549de85c0c564123374"
+      "sha256": "f36f878bf524705ffc174c2a0582d8d10e02ffe1c39de0ae65cf7e2d41d1bd32"
     },
     {
       "path": "img/pictures/ControlPrompts/SW/Sprint_SW_ch.png_",
       "size": 5278,
-      "sha256": "0c868390d11ca7f2e11acddab2036463948eb027e003412ad18e83ba409d0830"
+      "sha256": "730e71d4b98acd72fcfec25763de86f8873c70e0900230c3c982a4a0718847e6"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Interact_XBOX_ch.png_",
       "size": 5901,
-      "sha256": "a3e54cc7faa582766a7036b4359029439e0439a4f6d3fdfa57896d56ecade9f3"
+      "sha256": "8952be4861a487d9fbd46306427bf69140b37b0e7a84943e55c9f77910b497fd"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Menu_XBOX_ch.png_",
       "size": 5521,
-      "sha256": "669d112d4f6b3d3d83dbadac405500b29fe4887c75d2baf6bfa814d7521aca28"
+      "sha256": "5d1911db565cb71d76e964b984a302591b64899403cedc3171b1251656e85e19"
     },
     {
       "path": "img/pictures/ControlPrompts/XBOX/Sprint_XBOX_ch.png_",
       "size": 5239,
-      "sha256": "7bd24009a418dc317ede40f4c3bb0f532a6b09e0afc46e72b6f5b8abd7432c5f"
+      "sha256": "a83862b6e3ce775fd640be495c1a33b25cfca365885aed18d629c18743ab2b3d"
     },
     {
       "path": "img/pictures/LoadingFarm_ch.png_",
       "size": 4021,
-      "sha256": "82849e75cb7be0e18052aaca45023e13b06314cba666c8d06a60fc8778b16a6f"
+      "sha256": "1a218f6d5f11948eab1562c3d8373c842e5bda1610e3e21bc01c772bfdca6c15"
     },
     {
       "path": "img/pictures/LoadingLarge_ch.png_",
       "size": 4687,
-      "sha256": "a5961586256edec2a34ca9cadffb2c62350ed03492bd176ea028a3032f3fb111"
+      "sha256": "b796942afc9b62a2979c8ca2a983f45d90e2eb9edb1be2c286d7cd17a5372782"
     },
     {
       "path": "img/pictures/Luck_Lucky_ch.png_",
       "size": 739,
-      "sha256": "0285417f881f2f77d400d00e1c4ee60a38ab9821e580932fb2682714a40bfe4d"
+      "sha256": "85931a268c197ecfead936c316dab4444f51bbe3996b3b38600c80acc174b545"
     },
     {
       "path": "img/pictures/Luck_Neutral_ch.png_",
       "size": 486,
-      "sha256": "de4effb75b9445b0e2478c03cf5639e4ce6ccc51c4a63d00b1398da9334305a4"
+      "sha256": "05fbbfaed20de1a89927c651742bd18e286a0e6b744c4d4f97036c936e370824"
     },
     {
       "path": "img/pictures/Luck_Unlucky_ch.png_",
       "size": 564,
-      "sha256": "76cd9b9abc0449cef4a01ad1c9bdc0a3c2cc7016939cda3b84e584ea578c2adb"
+      "sha256": "9fe0ae67335d995b4511e5067e3e555ab4c90b3798e06c37a84b4817e013dd12"
     },
     {
       "path": "img/pictures/Radio/3_ch.png_",
       "size": 229164,
-      "sha256": "8f6270b19de3ba85e86e0a3b2eea0732668e2e186dc9819f7df86b7fc975f3af"
+      "sha256": "344802a63d9470dd83d35a68582327923f230448f7c90f0f41ec50afc102c283"
     },
     {
       "path": "img/pictures/Seasons/Banner0_ch.png_",
       "size": 70043,
-      "sha256": "34963377d388700e04ff79003af180308a3f10bf60dc3ab544b5e989fbbc5d53"
+      "sha256": "74fd10449a3db7f828a0340702c2eb759150a45095e05b2e975cc38fab7f992a"
     },
     {
       "path": "img/pictures/Seasons/Banner1_ch.png_",
       "size": 67806,
-      "sha256": "aa0f498a00303544a95e1a5c92780c0aa68ad7349bda33aa9d748a537ba334f8"
+      "sha256": "55bd9b30e958d84a5083ebdbdf11db89c07a2704cfe605a6c8807066f39dab55"
     },
     {
       "path": "img/pictures/Seasons/Banner2_ch.png_",
       "size": 64617,
-      "sha256": "cae152472663d8b8226f484d0a4e4552bf57bb29501c6f082f0546023f8dd816"
+      "sha256": "7b2978ae6e5b742b09371f387cf1f590c6951db042c36a053c58bfa9e15bd202"
     },
     {
       "path": "img/pictures/Seasons/Banner3_ch.png_",
       "size": 70584,
-      "sha256": "252ddb48684b1f584e5002ce676ea948ece625d832c8456fd77fb3421bef1693"
+      "sha256": "afec5609e2d7f0d4668044616c8fbd1494ca464338696f813b49cd9706885e09"
     },
     {
       "path": "img/pictures/Signs/watch1_ch.png_",
       "size": 6007,
-      "sha256": "978b1afeb9bbaaf20fd9b0082673470f44180f616385e1a549f436a681f5cb39"
+      "sha256": "86dd5d5b35c445a6396b27baddabde491a48322b5de88280615036157d7cf652"
     },
     {
       "path": "img/pictures/Signs/watch2_ch.png_",
       "size": 14328,
-      "sha256": "6494966ade411e7547f8f2f150ec50e848a8e1a404098e128cb47dab605e6b3d"
+      "sha256": "1930d2c39c0b2470bc51c5e2b39500f32621e5b5c84b0390ca394549968aabff"
     },
     {
       "path": "img/pictures/Signs/watch3_ch.png_",
       "size": 15630,
-      "sha256": "8156201288a7791c965ad419c2693d0c903fe88f46cba1ef3643d0f7bf5c2dd4"
+      "sha256": "7fcfc3d12214c1b7ac6becbb6042d1fbcebe2925e604ffdbd547257a9117d24e"
     },
     {
       "path": "img/pictures/Signs/watch4_ch.png_",
       "size": 4634,
-      "sha256": "8f3e4add1e54af4e48bb01132dccb22c4e03df59a586a7b99f87266bb26396dd"
+      "sha256": "e8e58acb07661df908447629f389d5184fd8f8de2bcc4376be445ee5ad643346"
     },
     {
       "path": "img/pictures/Tutorial/combat1_ch.png_",
       "size": 203650,
-      "sha256": "9c0a432fee6002af13da84b0bf7b14c698226f79ff30286d3b39ffa77597436a"
+      "sha256": "338f53c9e4371b583639d3eba11e6546b12c0b9dd7871e5515ba38a02b6d4fd1"
     },
     {
       "path": "img/pictures/Tutorial/combat7_ch.png_",
       "size": 161089,
-      "sha256": "1b9bfa29b77c45bee1e1840b5c40128f4b0e125379160b2f84fa715a51dcea6f"
+      "sha256": "0ca808e6bdcd708bfd957b608c5bbd9cb0c041081722cc20fc08df8800d611be"
     },
     {
       "path": "img/pictures/Tutorial/combat8_ch.png_",
       "size": 203930,
-      "sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
+      "sha256": "69edf28588fe1f3a2e74bd96eb43811324226f20a2c6767e37f9608e40e33dad"
     },
     {
       "path": "img/pictures/Tutorial Images/combat8_ch.png_",
       "size": 203930,
-      "sha256": "451807f557c940dbc0e34f80f81d80c23cfef6f5c8f049e01c6180a5fb6d898a"
+      "sha256": "69edf28588fe1f3a2e74bd96eb43811324226f20a2c6767e37f9608e40e33dad"
     },
     {
       "path": "img/pictures/UpdatingCrops_ch.png_",
       "size": 7235,
-      "sha256": "1c8f533c3bb3dbdca1029db16f288a03be93cd650eea587729e0a1bfd1e46d8a"
+      "sha256": "83662f26979e21684401ab1a735c06d4a122f5368c382c285df915f6ffe80ecb"
     },
     {
       "path": "img/pictures/hweenDice/TREAT_ch.png_",
       "size": 709,
-      "sha256": "52e1969a457b919f6392132e5218373da8d1b6829c5e1d718493415cd2385c10"
+      "sha256": "ba0b89ca3bfdd8f217b37bb0178fa7b25f453dd08b7e543a1db1d92088135354"
     },
     {
       "path": "img/pictures/hweenDice/TRICK_ch.png_",
       "size": 728,
-      "sha256": "4264d4f1435d406de8b46166b79d06d502fe54e3ad9bf344ec643d00e7365f69"
+      "sha256": "f162dba274de24d370dc5e4db5cf47a661cf62abcfcbea5a5f702398f7e73088"
     },
     {
       "path": "img/pictures/map_ch.png_",
       "size": 934462,
-      "sha256": "6e2ee2b1afe725e13c1da6c185b4dc9272350cb8469ba769bb5307871b2af6fb"
+      "sha256": "d44e5cb284f25bfbdd69bab36b88a58ab3a37e868f89fba33cc0ae576c41eb31"
     },
     {
       "path": "img/pictures/relationship bar/decrease_ch.png_",
       "size": 1279,
-      "sha256": "6ef9c2e3d9dba14b52e59befbe540d07ad27c2ae03d97f868407002f9e3e59d6"
+      "sha256": "ce36513387a0cf44aa12246388730209b910529ec72a6997fcd73fad428bb980"
     },
     {
       "path": "img/pictures/relationship bar/increased_ch.png_",
       "size": 1273,
-      "sha256": "201f65bfa05c4f92e659be336852d50014bc67efc4cb06410e3a87a01ffff49e"
+      "sha256": "5f72d2c423bb958be97dc3eba9521bad3fdd2a22e4d1c058be61e78d5f8c9173"
     },
     {
       "path": "img/system/GameOver_ch.png_",
       "size": 454886,
-      "sha256": "e8f496d0dc71d951ceb34dfb1d1ff8ba12fcfd18fe355e27a29829d669fab995"
+      "sha256": "88adca66c21651956c2ed26339f0b45e93c6c68335657966fa20e7ac43d67969"
     },
     {
       "path": "img/titles2/Command_6_ch.png_",
       "size": 2309,
-      "sha256": "89c48ace8ba540248b178589189b0ec7aacbf88dc5f4b68f5764bed6f72bf622"
+      "sha256": "2d4792430005a6e0f7f402404b9b47e92f6936ce0226733bdc3bbc136573e3b1"
     }
   ]
 }

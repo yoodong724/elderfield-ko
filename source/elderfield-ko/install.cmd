@@ -4,7 +4,7 @@ setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
 set "PATCH_DIR=%~dp0patch_files"
-set "BACKUP_DIR=%~dp0backup-build-25459455"
+set "BACKUP_DIR=%~dp0backup-build-25483278"
 
 if not exist "%GAME_DIR%\Game.exe" goto wrong_folder
 if not exist "%GAME_DIR%\game_messages.csv" goto wrong_folder
@@ -12,8 +12,8 @@ if not exist "%GAME_DIR%\data\System.json" goto wrong_folder
 if not exist "%GAME_DIR%\js\plugins.js" goto wrong_folder
 
 if exist "%BACKUP_DIR%" if not exist "%BACKUP_DIR%\.ready" (
-  echo [오류] 불완전한 Build 25459455 백업 폴더가 있습니다.
-  echo elderfield-ko\backup-build-25459455 폴더를 확인해 주세요.
+  echo [오류] 불완전한 Build 25483278 백업 폴더가 있습니다.
+  echo elderfield-ko\backup-build-25483278 폴더를 확인해 주세요.
   pause
   exit /b 1
 )
@@ -25,6 +25,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\WTE_OverburdenedDiscardFix.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -102,19 +103,21 @@ pause
 exit /b 1
 
 :unsupported_build
-echo [오류] 이 패치는 Steam Build 25459455 전용입니다.
+echo [오류] 이 패치는 Steam Build 25483278 전용입니다.
 echo Steam에서 게임 파일을 최신 상태로 복구한 뒤 다시 시도해 주세요.
 pause
 exit /b 1
 
 :preflight
-call :verify_hash "%GAME_DIR%\data\System.json" "60877d092e6665f23f9016e46032dc258f5e320e5484ac3e8d09c9801d52fe9a" || exit /b 1
+call :verify_hash "%GAME_DIR%\data\System.json" "45c371cbda68cf3a7aa1ca9500dc3d3d563c93108decdbc57f68117aa86819c3" || exit /b 1
 if exist "%BACKUP_DIR%\.ready" (
   call :verify_hash "%BACKUP_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
-  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
 ) else (
   call :verify_hash "%GAME_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
-  call :verify_hash "%GAME_DIR%\js\plugins.js" "edd4bc95248630c632ee8392574770a2d399b68e7180114f3b1958ebf3aacb90" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins.js" "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
 )
 exit /b 0
 
@@ -133,6 +136,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\WTE_OverburdenedDiscardFix.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -206,6 +210,7 @@ for %%F in (
   "game_messages.csv"
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
+  "js\plugins\WTE_OverburdenedDiscardFix.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
