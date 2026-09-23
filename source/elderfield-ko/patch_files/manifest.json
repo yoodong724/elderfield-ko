@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "25459455-rc1",
-  "release_tag": "v25459455-rc1",
+  "patch_version": "25459455-rc2",
+  "release_tag": "v25459455-rc2",
   "steam": {
     "app_id": "3195440",
     "build_id": "25459455",
@@ -10,7 +10,7 @@
   },
   "source_revision": "runtime-0bcac0872257b8ca",
   "translation_snapshot": "localization/translations/release-approved.jsonl",
-  "translation_snapshot_sha256": "46990690ffbc2e79880fdf0cf612c8b1925e2d0714c67e50705990b373b3f16a",
+  "translation_snapshot_sha256": "bce1ba8fdeafa7eefc9a62095c33f2e573226d8d849a6b478001f953dc0babbe",
   "source_hashes": {
     "game_messages.csv": "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4",
     "data/System.json": "60877d092e6665f23f9016e46032dc258f5e320e5484ac3e8d09c9801d52fe9a",
@@ -356,8 +356,8 @@
   "files": [
     {
       "path": "game_messages.csv",
-      "size": 7409932,
-      "sha256": "75aff132a4d6b0056a05c56e0e40d0af8901386b30b55e6a51b176efdd4e120c"
+      "size": 7410202,
+      "sha256": "00d6ae7e41994686dac8b8f95a170050c6bef3d972633c12cc5554da2059e757"
     },
     {
       "path": "fonts/NotoSansCJKkr-Regular.otf",

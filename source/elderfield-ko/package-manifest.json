@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "archive_root": "elderfield-ko",
-  "patch_version": "25459455-rc1",
-  "release_tag": "v25459455-rc1",
+  "patch_version": "25459455-rc2",
+  "release_tag": "v25459455-rc2",
   "steam": {
     "app_id": "3195440",
     "build_id": "25459455",
@@ -78,7 +78,7 @@
     {
       "path": "README.txt",
       "size": 738,
-      "sha256": "bb608ac0e94d34e7bd3f14cad83b1decd77a519d86b68e10e425ea4cfe5c9ea8"
+      "sha256": "40ea59b5d68109aec176eeda5809e7726001afc3a324347d60f1b4ccf380b70a"
     },
     {
       "path": "install.cmd",
@@ -97,8 +97,8 @@
     },
     {
       "path": "patch_files/game_messages.csv",
-      "size": 7409932,
-      "sha256": "75aff132a4d6b0056a05c56e0e40d0af8901386b30b55e6a51b176efdd4e120c"
+      "size": 7410202,
+      "sha256": "00d6ae7e41994686dac8b8f95a170050c6bef3d972633c12cc5554da2059e757"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
@@ -383,7 +383,7 @@
     {
       "path": "patch_files/manifest.json",
       "size": 31076,
-      "sha256": "d7225076826821c45d6d46dfaf66ea5cf73dbe43cde22db712a96b652de3bd01"
+      "sha256": "50f3f9d7d6d321cba721deac03f63b028a687a072cc469acad43add2bc140a85"
     },
     {
       "path": "restore.cmd",
