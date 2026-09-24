@@ -26,6 +26,8 @@ for %%F in (
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
   "js\plugins\WTE_OverburdenedDiscardFix.js"
+  "js\plugins\DM_InventorySearch.js"
+  "js\plugins\WTE_KoreanSearchInput.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -86,7 +88,6 @@ for %%F in (
   pause
   exit /b 1
 )
-
 if not exist "%BACKUP_DIR%\.ready" call :make_backup
 if errorlevel 1 goto failed
 
@@ -114,10 +115,12 @@ if exist "%BACKUP_DIR%\.ready" (
   call :verify_hash "%BACKUP_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
   call :verify_hash "%BACKUP_DIR%\js\plugins.js" "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281" || exit /b 1
   call :verify_hash "%BACKUP_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins\DM_InventorySearch.js" "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d" || exit /b 1
 ) else (
   call :verify_hash "%GAME_DIR%\game_messages.csv" "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4" || exit /b 1
   call :verify_hash "%GAME_DIR%\js\plugins.js" "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281" || exit /b 1
   call :verify_hash "%GAME_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins\DM_InventorySearch.js" "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d" || exit /b 1
 )
 exit /b 0
 
@@ -137,6 +140,8 @@ for %%F in (
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
   "js\plugins\WTE_OverburdenedDiscardFix.js"
+  "js\plugins\DM_InventorySearch.js"
+  "js\plugins\WTE_KoreanSearchInput.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
@@ -211,6 +216,8 @@ for %%F in (
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
   "js\plugins\WTE_OverburdenedDiscardFix.js"
+  "js\plugins\DM_InventorySearch.js"
+  "js\plugins\WTE_KoreanSearchInput.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"

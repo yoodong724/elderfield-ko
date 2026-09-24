@@ -200,7 +200,7 @@ var $plugins =
 {"name":"DM_DragAndDropSort","status":true,"description":"[v16.2] Drag & Drop Inventory Sorting (Instant Tap Responsiveness)","parameters":{"startDragSe":"silence","endDragSe":"Equip2"}},
 {"name":"DM_ContainerUI_Cleanup","status":true,"description":"[v70.4] Container UI Overhaul (Input Responsiveness Fix)","parameters":{"depositAllSe":"Equip2"}},
 {"name":"DM_InventorySortModes","status":true,"description":"[v7.0] Fixed Inventory Sorting Modes Framework","parameters":{}},
-{"name":"DM_InventorySearch","status":true,"description":"[v1.8] Container Search Filter & Sort Mode","parameters":{"searchIcon":"42"}},
+{"name":"DM_InventorySearch","status":true,"description":"[v1.8] Container Search Filter & Sort Mode","parameters":{"searchIcon":"42"}},{"name":"WTE_KoreanSearchInput","status":true,"description":"[v1.0.0] Korean IME container search input (ElderField KO patch)","parameters":{}},
 {"name":"SpriteInteract","status":false,"description":"(v1.14) Sprite-First Interaction with Strict Base-Range Validation.","parameters":{"Interaction Dist":"1.60"}},
 {"name":"CompositeVirtualProxyFix","status":true,"description":"[v1.0] Virtual Proxy Fix for KC Composite Bitmaps","parameters":{}},
 {"name":"DM_CoreShop_BlankFix","status":true,"description":"","parameters":{}},

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "archive_root": "elderfield-ko",
-  "patch_version": "1.0.2a-25483278-rc2",
-  "release_tag": "v1.0.2a-25483278-rc2",
+  "patch_version": "1.0.2a-25483278-rc3",
+  "release_tag": "v1.0.2a-25483278-rc3",
   "steam": {
     "app_id": "3195440",
     "build_id": "25483278",
@@ -13,13 +13,16 @@
     "game_messages.csv": "3696079ab195fd94fe7e9ccabd8b3351d5c7cf19fe276629b4a4c1db7aabdfb4",
     "data/System.json": "45c371cbda68cf3a7aa1ca9500dc3d3d563c93108decdbc57f68117aa86819c3",
     "js/plugins.js": "7459ecdc432962ce3a7ff3977cf53c7d2529d80ec3c9bb1e60acea022a8dd281",
-    "js/plugins/WTE_OverburdenedDiscardFix.js": "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae"
+    "js/plugins/WTE_OverburdenedDiscardFix.js": "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae",
+    "js/plugins/DM_InventorySearch.js": "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d"
   },
   "install_targets": [
     "game_messages.csv",
     "fonts/NotoSansCJKkr-Regular.otf",
     "js/plugins.js",
     "js/plugins/WTE_OverburdenedDiscardFix.js",
+    "js/plugins/DM_InventorySearch.js",
+    "js/plugins/WTE_KoreanSearchInput.js",
     "img/titles2/Command_0_ch.png_",
     "img/titles2/Command_1_ch.png_",
     "img/titles2/Command_2_ch.png_",
@@ -79,13 +82,13 @@
   "files": [
     {
       "path": "README.txt",
-      "size": 761,
-      "sha256": "494c807f5561ae7e6e1ede23b31bcafe459c198a3e0bcb0ceb9adc3e48447972"
+      "size": 946,
+      "sha256": "9dfbc8ec8fe8b36437f7c809a195f45ec45dc38c875883fc896e5b370347451c"
     },
     {
       "path": "install.cmd",
-      "size": 11705,
-      "sha256": "446f1fa61613d331f1728ba2bea087cc0baac72e8f39dfa5a46f160442eeed39"
+      "size": 12236,
+      "sha256": "b4b91b1e5022d5059a933c47afdc90d09f86b9bc630364b950d91d4ad573de40"
     },
     {
       "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
@@ -378,24 +381,34 @@
       "sha256": "2d4792430005a6e0f7f402404b9b47e92f6936ce0226733bdc3bbc136573e3b1"
     },
     {
+      "path": "patch_files/js/plugins/DM_InventorySearch.js",
+      "size": 18005,
+      "sha256": "b6e0b41577f04dac72bd02648e89c969fce4bbb306120b7ca2e337970962753f"
+    },
+    {
+      "path": "patch_files/js/plugins/WTE_KoreanSearchInput.js",
+      "size": 9993,
+      "sha256": "cdacd035efaa8bfc631fa6ea3c0ab716d0d2695662d0edc52381116b5ed11348"
+    },
+    {
       "path": "patch_files/js/plugins/WTE_OverburdenedDiscardFix.js",
       "size": 4076,
       "sha256": "e0916698bc4782fbe7d531a9daa9b3eca50c0109ad5bf1b7ebcfeb3cfd6661ba"
     },
     {
       "path": "patch_files/js/plugins.js",
-      "size": 6069827,
-      "sha256": "68acdf866dac561b61a3eaa47ca526d65dc40bb88da2f65d7a88f3e4966c9ee1"
+      "size": 6069971,
+      "sha256": "17170bc30a24d8143531579fe25a7d77b93c533670517d350792c96f5e82f821"
     },
     {
       "path": "patch_files/manifest.json",
-      "size": 31363,
-      "sha256": "1b50a23625c0b7f0a208266c3a21933f4cc3499a26f711aae436dafa43533a49"
+      "size": 31807,
+      "sha256": "edbc0865f0254d05c84709b238aa5a40dab341920b7a5159d8008fb84e6578c2"
     },
     {
       "path": "restore.cmd",
-      "size": 4029,
-      "sha256": "b86065b0402e358429fd5f339d1600556803a75b7ed063706c382462018cd99e"
+      "size": 4108,
+      "sha256": "17158d6b75f144fd8a46512048cfa6cde2cda21cf95522ce6785cdee89799250"
     }
   ]
 }

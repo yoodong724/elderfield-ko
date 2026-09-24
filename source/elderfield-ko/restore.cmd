@@ -26,6 +26,8 @@ for %%F in (
   "fonts\NotoSansCJKkr-Regular.otf"
   "js\plugins.js"
   "js\plugins\WTE_OverburdenedDiscardFix.js"
+  "js\plugins\DM_InventorySearch.js"
+  "js\plugins\WTE_KoreanSearchInput.js"
   "img\titles2\Command_0_ch.png_"
   "img\titles2\Command_1_ch.png_"
   "img\titles2\Command_2_ch.png_"
