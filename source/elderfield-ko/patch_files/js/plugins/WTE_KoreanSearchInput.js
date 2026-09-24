@@ -1,6 +1,6 @@
 /*:
  * @target MZ
- * @plugindesc [v1.0.0] Korean IME container/warehouse search input (ElderField KO patch)
+ * @plugindesc [v1.1.0] Korean IME container/warehouse search input (ElderField KO patch)
  * @author ElderField KO patch
  * @orderAfter DM_InventorySearch
  * @orderAfter WTE_SearchAutoClear
@@ -10,8 +10,14 @@
  * ----------------------------------------------------------------------------
  * The stock DM_InventorySearch opens RPG Maker MZ's Scene_Name, which uses a
  * fixed on-screen character grid (Window_NameInput) that has no Hangul and no
- * OS IME support. This plugin replaces that input with a DOM text field so the
- * operating system Korean IME can be used inside the NW.js runtime.
+ * OS IME support. This plugin replaces that input with a real OS IME text field
+ * so the operating system Korean IME can be used inside the NW.js runtime.
+ *
+ * The input panel is drawn with the engine's own Window_Base, so it uses the
+ * game windowskin, window tone, dynamic corner graphics and font exactly like
+ * the rest of the UI. A transparent DOM <input> is positioned on top of that
+ * window purely to receive IME composition; the text itself is drawn by the
+ * engine window.
  *
  * It also exposes window.WTE_ItemMatchesSearch(item, term), which the patched
  * DM_InventorySearch calls. The hook matches both the raw database name
@@ -22,8 +28,8 @@
  * - Confirm (Enter): set the search term and switch the container sort mode to
  *   Search. An empty term clears the search.
  * - Cancel (Esc or gamepad B): close without changing the current search.
- * - While the overlay is open the container scene ignores its own input, and
- *   the raw key events are kept away from the game Input manager.
+ * - While the panel is open the container scene ignores its own input, and the
+ *   raw key events are kept away from the game Input manager.
  *
  * Requires: DM_InventorySearch (Scene_Container), Hendrix_Localization_Core
  * (window.translateText) for Korean matching. If translateText is absent the
@@ -36,6 +42,7 @@
     if (typeof Scene_Container === "undefined") return;
 
     const PLUGIN_NAME = "WTE_KoreanSearchInput";
+    const PLUGIN_VERSION = "1.1.0";
 
     // ------------------------------------------------------------------
     // 1. Localized name matching hook (used by the patched DM_InventorySearch)
@@ -66,62 +73,126 @@
     };
 
     // ------------------------------------------------------------------
-    // 2. DOM overlay with OS IME support
+    // 2. Engine-drawn search window (matches the game's window skin)
     // ------------------------------------------------------------------
 
-    let overlay = null; // { root, input, finish }
+    let Window_KoreanSearchInput = null;
 
-    function ensureStyles() {
-        if (typeof document === "undefined") return;
-        if (document.getElementById("wte-ksearch-style")) return;
-        const style = document.createElement("style");
-        style.id = "wte-ksearch-style";
-        style.textContent = [
-            "#wte-ksearch{position:fixed;inset:0;z-index:2147483000;",
-            "background:rgba(0,0,0,0.55);display:flex;align-items:center;",
-            "justify-content:center;}",
-            "#wte-ksearch .box{background:rgba(14,16,22,0.97);",
-            "border:2px solid #9fb4c7;border-radius:10px;padding:18px 20px;",
-            "width:480px;max-width:80%;color:#fff;",
-            "font-family:'NotoSansCJKkr','Malgun Gothic',sans-serif;}",
-            "#wte-ksearch .title{font-size:18px;margin-bottom:10px;}",
-            "#wte-ksearch input{width:100%;box-sizing:border-box;font-size:22px;",
-            "padding:8px 10px;border-radius:6px;border:1px solid #9fb4c7;",
-            "background:#0d1117;color:#fff;outline:none;}",
-            "#wte-ksearch .hint{font-size:13px;opacity:0.8;margin-top:8px;}",
-        ].join("");
-        document.head.appendChild(style);
+    if (typeof Window_Base !== "undefined") {
+        Window_KoreanSearchInput = function () {
+            this.initialize(...arguments);
+        };
+        Window_KoreanSearchInput.prototype = Object.create(Window_Base.prototype);
+        Window_KoreanSearchInput.prototype.constructor = Window_KoreanSearchInput;
+
+        Window_KoreanSearchInput.prototype.initialize = function (rect) {
+            Window_Base.prototype.initialize.call(this, rect);
+            this._value = "";
+            this._cursorVisible = true;
+            this._blink = 0;
+            this.refresh();
+        };
+
+        Window_KoreanSearchInput.prototype.setValue = function (value) {
+            const text = String(value == null ? "" : value);
+            if (this._value === text) return;
+            this._value = text;
+            this.refresh();
+        };
+
+        Window_KoreanSearchInput.prototype.tick = function () {
+            this._blink = (this._blink + 1) % 60;
+            const visible = this._blink < 30;
+            if (visible !== this._cursorVisible) {
+                this._cursorVisible = visible;
+                this.refresh();
+            }
+        };
+
+        Window_KoreanSearchInput.prototype.refresh = function () {
+            if (!this.contents) return;
+            this.contents.clear();
+            const pad = this.textPadding();
+            const width = this.contents.width - pad * 2;
+            const lineH = this.lineHeight();
+            const hintH = 24;
+            const gap = 4;
+            const blockH = lineH + gap + lineH + gap + hintH;
+            let y = Math.max(pad, Math.floor((this.contents.height - blockH) / 2));
+
+            this.changeTextColor(ColorManager.systemColor());
+            this.drawText("아이템 검색", pad, y, width);
+            this.resetTextColor();
+
+            y += lineH + gap;
+            this.drawText(this._value, pad, y, width);
+
+            if (this._cursorVisible) {
+                const textWidth = Math.min(this.textWidth(this._value), width - 2);
+                this.contents.fillRect(pad + textWidth + 2, y + 6, 2, lineH - 12, ColorManager.normalColor());
+            }
+
+            y += lineH + gap;
+            this.contents.fontSize = 20;
+            this.changeTextColor(ColorManager.systemColor());
+            this.drawText("한글로 입력 · Enter 확인 · Esc 취소", pad, y, width);
+            this.resetFontSettings();
+        };
     }
 
-    function openOverlay(initialValue) {
-        if (typeof document === "undefined") return Promise.resolve(null);
-        ensureStyles();
+    // ------------------------------------------------------------------
+    // 3. Transparent DOM input used only to receive OS IME composition
+    // ------------------------------------------------------------------
 
-        const root = document.createElement("div");
-        root.id = "wte-ksearch";
+    let overlay = null; // { win, input, finish }
 
-        const box = document.createElement("div");
-        box.className = "box";
+    function styleInput(input) {
+        const style = input.style;
+        style.position = "fixed";
+        style.margin = "0";
+        style.padding = "0";
+        style.border = "none";
+        style.outline = "none";
+        style.background = "transparent";
+        style.color = "transparent";
+        style.caretColor = "transparent";
+        style.fontSize = "24px";
+        style.zIndex = "2147483000";
+    }
 
-        const title = document.createElement("div");
-        title.className = "title";
-        title.textContent = "아이템 검색";
+    function positionInput() {
+        if (!overlay) return;
+        const canvas = Graphics._canvas || document.querySelector("canvas");
+        if (!canvas) return;
+        const rect = canvas.getBoundingClientRect();
+        if (!rect.width || !rect.height) return;
+        const win = overlay.win;
+        const sx = rect.width / Graphics.width;
+        const sy = rect.height / Graphics.height;
+        const style = overlay.input.style;
+        style.left = rect.left + (win.x + 4) * sx + "px";
+        style.top = rect.top + (win.y + 4) * sy + "px";
+        style.width = (win.width - 8) * sx + "px";
+        style.height = (win.height - 8) * sy + "px";
+    }
+
+    function openOverlay(scene, initialValue) {
+        if (typeof document === "undefined" || !Window_KoreanSearchInput) {
+            return Promise.resolve(null);
+        }
+
+        const win = scene.koreanSearchWindow();
+        win.setValue(initialValue || "");
+        win.show();
 
         const input = document.createElement("input");
         input.type = "text";
         input.maxLength = 32;
         input.autocomplete = "off";
+        input.spellcheck = false;
         input.value = initialValue || "";
-
-        const hint = document.createElement("div");
-        hint.className = "hint";
-        hint.textContent = "한글로 입력한 뒤 Enter, 취소는 Esc";
-
-        box.appendChild(title);
-        box.appendChild(input);
-        box.appendChild(hint);
-        root.appendChild(box);
-        document.body.appendChild(root);
+        styleInput(input);
+        document.body.appendChild(input);
 
         return new Promise((resolve) => {
             let settled = false;
@@ -133,19 +204,17 @@
                 input.removeEventListener("keydown", onKeyDown);
                 input.removeEventListener("keyup", swallow);
                 input.removeEventListener("keypress", swallow);
-                if (root.parentNode) root.parentNode.removeChild(root);
+                if (input.parentNode) input.parentNode.removeChild(input);
+                if (win.parent) win.hide();
                 resolve(value);
             };
 
-            const swallow = (event) => {
-                event.stopPropagation();
-            };
+            const swallow = (event) => event.stopPropagation();
 
             const onKeyDown = (event) => {
-                // Keep every key away from the game Input manager. Because this
-                // listener runs during the target phase on the focused input it
-                // stops the event before it bubbles to the document listeners
-                // MZ/VisuStella install.
+                // Keep every key away from the game Input manager. This listener
+                // runs on the focused input, before the event bubbles to the
+                // document listeners MZ/VisuStella install.
                 event.stopPropagation();
                 if (event.key === "Enter" && !event.isComposing) {
                     event.preventDefault();
@@ -160,9 +229,9 @@
             input.addEventListener("keyup", swallow);
             input.addEventListener("keypress", swallow);
 
-            overlay = { root, input, finish };
+            overlay = { win, input, finish };
+            positionInput();
 
-            // Focusing after the current frame avoids the engine stealing focus.
             setTimeout(() => {
                 try {
                     input.focus();
@@ -170,27 +239,45 @@
                 } catch (error) {
                     // Ignore focus failures; the user can still click the field.
                 }
+                positionInput();
             }, 0);
         });
     }
 
     // ------------------------------------------------------------------
-    // 3. Scene integration
+    // 4. Scene integration
     // ------------------------------------------------------------------
 
-    // While the overlay is open the container scene must not react to keys.
+    // Lazily create one reusable engine window per container scene.
+    Scene_Container.prototype.koreanSearchWindow = function () {
+        if (!this._koreanSearchWindow && Window_KoreanSearchInput) {
+            const width = 560;
+            const height = 150;
+            const x = Math.floor((Graphics.boxWidth - width) / 2);
+            const y = Math.floor((Graphics.boxHeight - height) / 2);
+            const rect = new Rectangle(x, y, width, height);
+            this._koreanSearchWindow = new Window_KoreanSearchInput(rect);
+            this._koreanSearchWindow.hide();
+            this.addWindow(this._koreanSearchWindow);
+        }
+        return this._koreanSearchWindow;
+    };
+
+    // While the panel is open the container scene must not react to keys.
     const _Scene_Container_isActive = Scene_Container.prototype.isActive;
     Scene_Container.prototype.isActive = function () {
         if (overlay) return false;
         return _Scene_Container_isActive.call(this);
     };
 
-    // Allow gamepad "cancel" to close the overlay (keyboard Esc is handled by
-    // the DOM listener above).
     const _Scene_Container_update = Scene_Container.prototype.update;
     Scene_Container.prototype.update = function () {
         _Scene_Container_update.call(this);
-        if (overlay && Input.isTriggered("cancel")) {
+        if (!overlay) return;
+        overlay.win.setValue(overlay.input.value);
+        overlay.win.tick();
+        positionInput();
+        if (Input.isTriggered("cancel")) {
             overlay.finish(null);
         }
     };
@@ -233,7 +320,7 @@
         }
         const initial = $gameSystem._containerSearchTerm || "";
         Input.clear();
-        openOverlay(initial).then((value) => {
+        openOverlay(scene, initial).then((value) => {
             if (SceneManager._scene !== scene) {
                 Input.clear();
                 return;
@@ -248,6 +335,6 @@
     };
 
     if (typeof window.WTE_KoreanSearchInput === "undefined") {
-        window.WTE_KoreanSearchInput = { pluginName: PLUGIN_NAME, version: "1.0.0" };
+        window.WTE_KoreanSearchInput = { pluginName: PLUGIN_NAME, version: PLUGIN_VERSION };
     }
 })();

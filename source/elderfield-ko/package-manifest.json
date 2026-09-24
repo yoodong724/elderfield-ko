@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "archive_root": "elderfield-ko",
-  "patch_version": "1.0.2a-25483278-rc3",
-  "release_tag": "v1.0.2a-25483278-rc3",
+  "patch_version": "1.0.2a-25483278-rc4",
+  "release_tag": "v1.0.2a-25483278-rc4",
   "steam": {
     "app_id": "3195440",
     "build_id": "25483278",
@@ -82,8 +82,8 @@
   "files": [
     {
       "path": "README.txt",
-      "size": 946,
-      "sha256": "9dfbc8ec8fe8b36437f7c809a195f45ec45dc38c875883fc896e5b370347451c"
+      "size": 1015,
+      "sha256": "34a5b55600ea0662632fc6b78946f2ad67ce8500eef2d52771628dc50709652f"
     },
     {
       "path": "install.cmd",
@@ -387,8 +387,8 @@
     },
     {
       "path": "patch_files/js/plugins/WTE_KoreanSearchInput.js",
-      "size": 9993,
-      "sha256": "cdacd035efaa8bfc631fa6ea3c0ab716d0d2695662d0edc52381116b5ed11348"
+      "size": 13274,
+      "sha256": "61eec3e2c9878e8797245e795ce8e369326dbfc26190ba054df2f5259a218878"
     },
     {
       "path": "patch_files/js/plugins/WTE_OverburdenedDiscardFix.js",
@@ -402,8 +402,8 @@
     },
     {
       "path": "patch_files/manifest.json",
-      "size": 31807,
-      "sha256": "edbc0865f0254d05c84709b238aa5a40dab341920b7a5159d8008fb84e6578c2"
+      "size": 31808,
+      "sha256": "25f7e397e1e28d11b6480ee3dfca4ffd6b91592082b621a9b98cda909d9a3939"
     },
     {
       "path": "restore.cmd",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "patch_version": "1.0.2a-25483278-rc3",
-  "release_tag": "v1.0.2a-25483278-rc3",
+  "patch_version": "1.0.2a-25483278-rc4",
+  "release_tag": "v1.0.2a-25483278-rc4",
   "steam": {
     "app_id": "3195440",
     "build_id": "25483278",
@@ -388,8 +388,8 @@
     },
     {
       "path": "js/plugins/WTE_KoreanSearchInput.js",
-      "size": 9993,
-      "sha256": "cdacd035efaa8bfc631fa6ea3c0ab716d0d2695662d0edc52381116b5ed11348"
+      "size": 13274,
+      "sha256": "61eec3e2c9878e8797245e795ce8e369326dbfc26190ba054df2f5259a218878"
     },
     {
       "path": "img/titles2/Command_0_ch.png_",
