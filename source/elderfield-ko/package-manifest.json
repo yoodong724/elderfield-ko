@@ -1,20 +1,21 @@
 {
-  "schema_version": "1.0.0",
-  "patch_version": "1.0.3-26223771-rc1",
-  "release_tag": "v1.0.3-26223771-rc1",
+  "schema_version": "2.0.0",
+  "patch_version": "1.0.3b-26243857-rc1",
+  "release_tag": "v1.0.3b-26243857-rc1",
+  "game_version": "v1.0.3b",
   "steam": {
     "app_id": "3195440",
-    "build_id": "26223771",
+    "build_id": "26243857",
     "depot_id": "3195441",
-    "depot_manifest": "8756828951629803994"
+    "depot_manifest": "3386757079868822320"
   },
   "source_hashes": {
-    "js/plugins/VirtualModLoader_UI.js": "71cacbb6d7aa810c64084a7f56e267cd36cc345815fece7bbe54a0f4d457befd",
     "game_messages.csv": "c4ebb2a1589c68acd20107e24daf07ca0c26a3a76bbe82876f4fe03664efdd3c",
-    "data/System.json": "f6f107ebcdddd55db773a5eaaaef4a401771661818d980e6b3cd38c87c9d1ea4",
-    "js/plugins.js": "411fd1d08dca4694bad7a6c69179fa02fd39671ed2119818df2fcbca4312726a",
+    "data/System.json": "c3b3ae49f14ae4d38088cba50e2ac40d0d8179c49167df81d78f90fab4ccbabf",
+    "js/plugins.js": "d222a7cde5abce2c762b2349a467b21faece069dc3f21680c6c4e47678653bb8",
     "js/plugins/WTE_OverburdenedDiscardFix.js": "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae",
     "js/plugins/DM_InventorySearch.js": "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d",
+    "js/plugins/VirtualModLoader_UI.js": "71cacbb6d7aa810c64084a7f56e267cd36cc345815fece7bbe54a0f4d457befd",
     "js/plugins/WTE_Professions.js": "9f7f782a220264acbffbfee4cdf074003803b1256e10fab78a10b51f61225828"
   },
   "archive_root": "elderfield-ko",
@@ -82,17 +83,16 @@
     "img/titles2/Command_6_ch.png_",
     "js/plugins/VirtualModLoader_UI.js"
   ],
-  "status": "candidate_pending_review_and_runtime",
   "files": [
     {
       "path": "README.txt",
-      "size": 1082,
-      "sha256": "b79e07fa44c5ba584b46c73dc73bd092557f9e17db7a7d8ab6b0f6d5442defbc"
+      "size": 1084,
+      "sha256": "dfe4800a5a47fa454e9155ee885111e5baa5c1eae40177512f0a9b50826e8752"
     },
     {
       "path": "install.cmd",
       "size": 26866,
-      "sha256": "8db4ba970e67ec8d31e31ad8b8e075096c0a57d0a3b47d7f32e44952a0add1d2"
+      "sha256": "8d51c27e39d5f360fc62aa5f75fe8b2964a9f8d172baa0f02c0c58cebdcbfb20"
     },
     {
       "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
@@ -386,8 +386,8 @@
     },
     {
       "path": "patch_files/js/plugins.js",
-      "size": 6543157,
-      "sha256": "2950a9e40f0c12a6aa3c2536671afdb61f369937160cc95107bb65f9db3d42a2"
+      "size": 6545170,
+      "sha256": "ba48a1dd8c58c7c41673bfcd34114f137bfd8df4c2b965895bd6a92103eb3369"
     },
     {
       "path": "patch_files/js/plugins/DM_InventorySearch.js",
@@ -411,13 +411,13 @@
     },
     {
       "path": "patch_files/manifest.json",
-      "size": 41213,
-      "sha256": "28259fc323359f4ecaa418a456e6493bb86f147c44b64788d95df3b1d640d9f3"
+      "size": 12012,
+      "sha256": "5fd7b7e6bf141942022f7bae8eecae0dad704d5b0705c4d6d073782732104491"
     },
     {
       "path": "restore.cmd",
       "size": 7959,
-      "sha256": "709ae57c1b5f32083365c036a5ee5c01d8dcad18fc5d050c7af2ec14cba96700"
+      "sha256": "9dfff49baa5ef501be7dcc95fa142214e8ca968db90692e566eee098c05c82d5"
     }
   ]
 }

@@ -4,7 +4,7 @@ setlocal EnableExtensions DisableDelayedExpansion
 cd /d "%~dp0"
 set "GAME_DIR=%~dp0.."
 set "PATCH_DIR=%~dp0patch_files"
-set "BACKUP_DIR=%~dp0backup-build-26223771"
+set "BACKUP_DIR=%~dp0backup-build-26243857"
 
 if not exist "%GAME_DIR%\Game.exe" goto wrong_folder
 if not exist "%GAME_DIR%\game_messages.csv" goto wrong_folder
@@ -12,8 +12,8 @@ if not exist "%GAME_DIR%\data\System.json" goto wrong_folder
 if not exist "%GAME_DIR%\js\plugins.js" goto wrong_folder
 
 if exist "%BACKUP_DIR%" if not exist "%BACKUP_DIR%\.ready" (
-  echo [오류] 불완전한 Build 26223771 백업 폴더가 있습니다.
-  echo elderfield-ko\backup-build-26223771 폴더를 확인해 주세요.
+  echo [오류] 불완전한 Build 26243857 백업 폴더가 있습니다.
+  echo elderfield-ko\backup-build-26243857 폴더를 확인해 주세요.
   pause
   exit /b 1
 )
@@ -109,7 +109,7 @@ pause
 exit /b 1
 
 :unsupported_build
-echo [오류] 이 패치는 Steam Build 26223771 전용입니다.
+echo [오류] 이 패치는 Steam Build 26243857 전용입니다.
 echo Steam에서 게임 파일을 최신 상태로 복구한 뒤 다시 시도해 주세요.
 pause
 exit /b 1
@@ -121,15 +121,15 @@ if exist "%BACKUP_DIR%\.ready" (
 ) else (
   call :verify_hash "%GAME_DIR%\js\plugins\VirtualModLoader_UI.js" "71cacbb6d7aa810c64084a7f56e267cd36cc345815fece7bbe54a0f4d457befd" || exit /b 1
 )
-call :verify_hash "%GAME_DIR%\data\System.json" "f6f107ebcdddd55db773a5eaaaef4a401771661818d980e6b3cd38c87c9d1ea4" || exit /b 1
+call :verify_hash "%GAME_DIR%\data\System.json" "c3b3ae49f14ae4d38088cba50e2ac40d0d8179c49167df81d78f90fab4ccbabf" || exit /b 1
 if exist "%BACKUP_DIR%\.ready" (
   call :verify_hash "%BACKUP_DIR%\game_messages.csv" "c4ebb2a1589c68acd20107e24daf07ca0c26a3a76bbe82876f4fe03664efdd3c" || exit /b 1
-  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "411fd1d08dca4694bad7a6c69179fa02fd39671ed2119818df2fcbca4312726a" || exit /b 1
+  call :verify_hash "%BACKUP_DIR%\js\plugins.js" "d222a7cde5abce2c762b2349a467b21faece069dc3f21680c6c4e47678653bb8" || exit /b 1
   call :verify_hash "%BACKUP_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
   call :verify_hash "%BACKUP_DIR%\js\plugins\DM_InventorySearch.js" "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d" || exit /b 1
 ) else (
   call :verify_hash "%GAME_DIR%\game_messages.csv" "c4ebb2a1589c68acd20107e24daf07ca0c26a3a76bbe82876f4fe03664efdd3c" || exit /b 1
-  call :verify_hash "%GAME_DIR%\js\plugins.js" "411fd1d08dca4694bad7a6c69179fa02fd39671ed2119818df2fcbca4312726a" || exit /b 1
+  call :verify_hash "%GAME_DIR%\js\plugins.js" "d222a7cde5abce2c762b2349a467b21faece069dc3f21680c6c4e47678653bb8" || exit /b 1
   call :verify_hash "%GAME_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "60d4861950a0a09122768ca5b7b5da5bed4e69f99ad5cda48680ba1fcbe36cae" || exit /b 1
   call :verify_hash "%GAME_DIR%\js\plugins\DM_InventorySearch.js" "4666e6855e86f2a632fed37b223b13eb694fbf97a8f3a106d1701661b37f3f6d" || exit /b 1
 )
@@ -368,12 +368,12 @@ call :verify_hash "%PATCH_DIR%\img\titles2\Command_1_ch.png_" "3ec7a93cbdfe4c699
 call :verify_hash "%PATCH_DIR%\img\titles2\Command_2_ch.png_" "db39adea456e7f59bb25a57856d025530acf10448721e076a125a3ca09919276" || exit /b 1
 call :verify_hash "%PATCH_DIR%\img\titles2\Command_3_ch.png_" "524e6f7d6947874e96bf84040c6bfa3935553126628b953ab60e6f6999c67e1d" || exit /b 1
 call :verify_hash "%PATCH_DIR%\img\titles2\Command_6_ch.png_" "51c4160813989d17986bb02ad07a437edd9bdcf7021b08785516e4155590c0c8" || exit /b 1
-call :verify_hash "%PATCH_DIR%\js\plugins.js" "2950a9e40f0c12a6aa3c2536671afdb61f369937160cc95107bb65f9db3d42a2" || exit /b 1
+call :verify_hash "%PATCH_DIR%\js\plugins.js" "ba48a1dd8c58c7c41673bfcd34114f137bfd8df4c2b965895bd6a92103eb3369" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\DM_InventorySearch.js" "b6e0b41577f04dac72bd02648e89c969fce4bbb306120b7ca2e337970962753f" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\VirtualModLoader_UI.js" "19c122ebeb342c89c5727172e7ba6a6ae6c3ed98640c94fecc4be955c00fbe23" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\WTE_KoreanSearchInput.js" "61eec3e2c9878e8797245e795ce8e369326dbfc26190ba054df2f5259a218878" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "e0916698bc4782fbe7d531a9daa9b3eca50c0109ad5bf1b7ebcfeb3cfd6661ba" || exit /b 1
-call :verify_hash "%PATCH_DIR%\manifest.json" "28259fc323359f4ecaa418a456e6493bb86f147c44b64788d95df3b1d640d9f3" || exit /b 1
+call :verify_hash "%PATCH_DIR%\manifest.json" "5fd7b7e6bf141942022f7bae8eecae0dad704d5b0705c4d6d073782732104491" || exit /b 1
 exit /b 0
 
 :record_hash
