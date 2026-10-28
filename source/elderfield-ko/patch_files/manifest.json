@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "patch_version": "1.0.3b-26243857-rc1",
-  "release_tag": "v1.0.3b-26243857-rc1",
+  "patch_version": "1.0.3b-26243857-rc3",
+  "release_tag": "v1.0.3b-26243857-rc3",
   "game_version": "v1.0.3b",
   "steam": {
     "app_id": "3195440",
@@ -32,8 +32,8 @@
     },
     {
       "path": "game_messages.csv",
-      "size": 7639201,
-      "sha256": "08898c447f69136c7ffdfd1339322ab9d3355e09bae82b4ff73add4ca502e639"
+      "size": 7640566,
+      "sha256": "80723e8d6928a19ad9a69dbbbb6339c1fa7aee26f3737deff35ca8f26025ccdb"
     },
     {
       "path": "img/pictures/Calendar/SeasonofDeath_ch.png_",

@@ -312,7 +312,7 @@ exit /b 1
 :verify_payload
 call :verify_hash "%PATCH_DIR%\fonts\NotoSansCJKkr-Regular.otf" "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a" || exit /b 1
 call :verify_hash "%PATCH_DIR%\fonts\NotoSansCJKkr-Regular.otf.LICENSE.txt" "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2" || exit /b 1
-call :verify_hash "%PATCH_DIR%\game_messages.csv" "08898c447f69136c7ffdfd1339322ab9d3355e09bae82b4ff73add4ca502e639" || exit /b 1
+call :verify_hash "%PATCH_DIR%\game_messages.csv" "80723e8d6928a19ad9a69dbbbb6339c1fa7aee26f3737deff35ca8f26025ccdb" || exit /b 1
 call :verify_hash "%PATCH_DIR%\img\pictures\Calendar\SeasonofDeath_ch.png_" "f96542778b264935d2d4d3b3ced6277b655f3a5522adb49dafb6c0d88167b9f0" || exit /b 1
 call :verify_hash "%PATCH_DIR%\img\pictures\Calendar\SeasonofRebirth_ch.png_" "b4829a33949c8422385aec3df65c4bcde6aeb9cecf9554c341f1fe5ba83ec8db" || exit /b 1
 call :verify_hash "%PATCH_DIR%\img\pictures\Calendar\SeasonoftheHarvest_ch.png_" "d12f6627f903ad415fffa2c604761cebac3f202e0ec6ee154dd90ff2250fcd7c" || exit /b 1
@@ -373,7 +373,7 @@ call :verify_hash "%PATCH_DIR%\js\plugins\DM_InventorySearch.js" "b6e0b41577f04d
 call :verify_hash "%PATCH_DIR%\js\plugins\VirtualModLoader_UI.js" "19c122ebeb342c89c5727172e7ba6a6ae6c3ed98640c94fecc4be955c00fbe23" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\WTE_KoreanSearchInput.js" "61eec3e2c9878e8797245e795ce8e369326dbfc26190ba054df2f5259a218878" || exit /b 1
 call :verify_hash "%PATCH_DIR%\js\plugins\WTE_OverburdenedDiscardFix.js" "e0916698bc4782fbe7d531a9daa9b3eca50c0109ad5bf1b7ebcfeb3cfd6661ba" || exit /b 1
-call :verify_hash "%PATCH_DIR%\manifest.json" "5fd7b7e6bf141942022f7bae8eecae0dad704d5b0705c4d6d073782732104491" || exit /b 1
+call :verify_hash "%PATCH_DIR%\manifest.json" "82f3aa31909521b751d97dbbcbdafa0b029a8b1cad1776b99f30a7adeb8593c5" || exit /b 1
 exit /b 0
 
 :record_hash

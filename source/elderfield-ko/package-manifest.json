@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "patch_version": "1.0.3b-26243857-rc1",
-  "release_tag": "v1.0.3b-26243857-rc1",
+  "patch_version": "1.0.3b-26243857-rc3",
+  "release_tag": "v1.0.3b-26243857-rc3",
   "game_version": "v1.0.3b",
   "steam": {
     "app_id": "3195440",
@@ -86,13 +86,13 @@
   "files": [
     {
       "path": "README.txt",
-      "size": 1084,
-      "sha256": "dfe4800a5a47fa454e9155ee885111e5baa5c1eae40177512f0a9b50826e8752"
+      "size": 1097,
+      "sha256": "20811bbe9f3bc6450d55a42585d6444b0f81519ba3ae74e9e93bb18bbcbb3782"
     },
     {
       "path": "install.cmd",
       "size": 26866,
-      "sha256": "8d51c27e39d5f360fc62aa5f75fe8b2964a9f8d172baa0f02c0c58cebdcbfb20"
+      "sha256": "b964505bf7e701c954cda88b2d551980a906b8b54ebb90ede168a048e0c1f038"
     },
     {
       "path": "patch_files/fonts/NotoSansCJKkr-Regular.otf",
@@ -106,8 +106,8 @@
     },
     {
       "path": "patch_files/game_messages.csv",
-      "size": 7639201,
-      "sha256": "08898c447f69136c7ffdfd1339322ab9d3355e09bae82b4ff73add4ca502e639"
+      "size": 7640566,
+      "sha256": "80723e8d6928a19ad9a69dbbbb6339c1fa7aee26f3737deff35ca8f26025ccdb"
     },
     {
       "path": "patch_files/img/pictures/Calendar/SeasonofDeath_ch.png_",
@@ -412,7 +412,7 @@
     {
       "path": "patch_files/manifest.json",
       "size": 12012,
-      "sha256": "5fd7b7e6bf141942022f7bae8eecae0dad704d5b0705c4d6d073782732104491"
+      "sha256": "82f3aa31909521b751d97dbbcbdafa0b029a8b1cad1776b99f30a7adeb8593c5"
     },
     {
       "path": "restore.cmd",
